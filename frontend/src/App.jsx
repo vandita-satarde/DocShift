@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/HomePage'
 import ContactUs from './pages/ContactPage'
 import Features from './pages/FeaturesPage'
+import UsecasesPage from './pages/UsecasesPage'
+
 
 import Feature1 from './pages/featurespage/feature1'
 import Feature2 from './pages/featurespage/feature2'
@@ -26,6 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path='/features' element={<Features />} />
+          <Route path='/use-cases' element={<UsecasesPage />} />
 
           <Route path='/toolsdetails' element={<ToolsDetails />} />
 
