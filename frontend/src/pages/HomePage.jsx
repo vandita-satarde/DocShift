@@ -18,7 +18,7 @@ function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className='bg-[#0E1836] flex flex-col md:flex-row h-[590px] md:h-[608px] px-8 md:px-30 py-8 md:py-18 mt-[80px] md:mt-[110px] '>
+      <div className='bg-[#0E1836] flex flex-col md:flex-row h-[590px] md:h-[619px] px-8 md:px-30 py-8 md:py-18 mt-[80px] md:mt-[110px] '>
         <div className='text-[#FFFFFF] '>
           <p className='text-[34px] md:text-[65px] md:leading-20 '>AI-Powered Document Management Platform</p>
           <p className='text-[12px] md:text-[19px] my-4 md:my-9 mr-1 md:mr-60 md:leading-9 '>DocShift is a powerful suite of tools designed to streamline your workflow and boost your productivity. From AI-powered writing assistance to advanced plagiarism detection.</p>

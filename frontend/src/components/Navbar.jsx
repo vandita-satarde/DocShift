@@ -13,7 +13,9 @@ function Navbar() {
             <div className='fixed top-0 left-0 w-full z-50 bg-[#0E1836] text-[19px] font-[400] text-white flex flex-col xl:flex-row xl:items-center justify-between px-6 xl:px-[120px] py-5 xl:h-[110px]'>
                 {/* Logo and hamburger */}
                 <div className='flex justify-between items-center w-full xl:w-auto'>
-                    <img src={logo} className='w-[150px] h-[40px]' />
+                    <Link to="/">
+                        <img src={logo} className='w-[150px] h-[40px]' />
+                    </Link>
                     <div className='xl:hidden'>
                         <button onClick={toggleMenu}>
                             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
