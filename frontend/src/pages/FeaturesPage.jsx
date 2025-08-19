@@ -26,6 +26,7 @@ import tool16 from '../assets/images/feturespage/tool-16.png'
 import shield from '../assets/images/feturespage/shield.png'
 import rectangle1 from '../assets/images/feturespage/Rectangle1.png'
 import rectangle2 from '../assets/images/feturespage/Rectangle2.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -52,7 +53,7 @@ function Feature() {
             <div className='bg-[#F5F9FE] pt-40 md:pt-1'>
                 <p className='text-[#0E1836] text-[28px] md:text-[48px] text-center '>Unlock the All Tools</p>
                 <div className='flex flex-wrap gap-4 md:gap-10 justify-center py-6 md:py-20'>
-                    <AllTools image={tool1} name='Image to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#1964F0] ' />
+                    <Link to='/toolsdetails'><AllTools image={tool1} name='Image to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#1964F0] ' /></Link>
                     <AllTools image={tool2} name='PDF to Image' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#1A8A89] ' />
                     <AllTools image={tool3} name='Merge PDF’s' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#F5AE5E] ' />
                     <AllTools image={tool4} name='Word to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#9673E5] ' />
@@ -107,16 +108,16 @@ function Feature() {
             <div className='bg-[#F5F9FE]'>
                 <p className='text-[26px] md:text-[48px] text-[#0E1836] text-center pt-10 md:pt-30'>Explore Our Features</p>
                 <div className='flex flex-wrap justify-center gap-x-3 md:gap-x-10 gap-y-6 md:gap-y-14 py-5 md:py-12 '>
-                    <Features name='File Upload & Storage' />
-                    <Features name='Smart Tagging' />
-                    <Features name='Document Version Control' />
-                    <Features name='Expiry Date Tracking' />
-                    <Features name='Role-Based Sharing' />
-                    <Features name='Digital Signature Support' />
-                    <Features name='AI-Integrated Tools' />
-                    <Features name='Plagiarism Checker' />
-                    <Features name='Image & Visual Tools' />
-                    <Features name='Document Builder' />
+                    <Link to='/feature1-details' ><Features name='File Upload & Storage' /></Link>
+                    <Link to='/feature2-details'><Features name='Smart Tagging' /></Link>
+                    <Link to='/feature3page'><Features name='Document Version Control' /></Link>
+                    <Link to='/feature4page'><Features name='Expiry Date Tracking' /></Link>
+                    <Link to='/feature5page'><Features name='Role-Based Sharing' /></Link>
+                    <Link to='/feature6page'><Features name='Digital Signature Support' /></Link>
+                    <Link to='/feature7page'><Features name='AI-Integrated Tools' /></Link>
+                    <Link to='/feature8page'><Features name='Plagiarism Checker' /></Link>
+                    <Link to='/feature9page'><Features name='Image & Visual Tools' /></Link>
+                    <Link to='/feature10page'><Features name='Document Builder' /></Link>
 
                 </div>
             </div>
