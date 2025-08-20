@@ -3,7 +3,11 @@ import Navbar from '../components/Navbar'
 import UseCases from '../components/usecasespage/usecases'
 import Footer from '../components/Footer'
 
-import image from '../assets/images/image.jpg'
+import usecase1 from '../assets/images/usecasesimages/usecase1.png'
+import usecase2 from '../assets/images/usecasesimages/usecase2.png'
+import usecase3 from '../assets/images/usecasesimages/usecase3.png'
+import usecase4 from '../assets/images/usecasesimages/usecase4.png'
+import usecase5 from '../assets/images/usecasesimages/usecase5.png'
 
 function UsecasesPage() {
   return (
@@ -22,23 +26,23 @@ function UsecasesPage() {
             <p className='text-[9px] md:text-[15px] tracking-wide w-[240px] md:w-[560px] mx-auto'>DocShift is more than a document management system (DMS)—it’s a comprehensive ecosystem designed to address modern document challenges.</p>
             <div className=' my-6 md:my-15 space-y-6 md:space-y-20'>
                 <UseCases 
-                    image={image} name='CA Firms' subcontent='Streamline Your Operation' link='/usecase1page'
+                    image={usecase1} name='CA Firms' subcontent='Streamline Your Operation' link='/usecase1page'
                     content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                 />
                 <UseCases 
-                    image={image} name='Legal Offices' subcontent='Streamline Your Operation' link='/usecase2page' maindiv='flex-row-reverse'
+                    image={usecase2} name='Legal Offices' subcontent='Streamline Your Operation' link='/usecase2page' maindiv='flex-row-reverse'
                     content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                 />
                 <UseCases 
-                    image={image} name='Medical Records' subcontent='Streamline Your Operation' link='/usecase3page' 
+                    image={usecase3} name='Medical Records' subcontent='Streamline Your Operation' link='/usecase3page' 
                     content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                 />
                 <UseCases 
-                    image={image} name='Corporates' subcontent='Streamline Your Operation' link='/usecase4page' maindiv='flex-row-reverse'
+                    image={usecase4} name='Corporates' subcontent='Streamline Your Operation' link='/usecase4page' maindiv='flex-row-reverse'
                     content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                 />
                 <UseCases 
-                    image={image} name='Educational Institutes' subcontent='Streamline Your Operation' link='/usecase5page'
+                    image={usecase5} name='Educational Institutes' subcontent='Streamline Your Operation' link='/usecase5page'
                     content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
                 />
             </div>
