@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import FeaturesDetails from '../../components/featurespage/FeaturesDetails'
-import Subfeature from '../../components/featurespage/Subfeature'
+import Subfeature from '../../components/Subfeature'
 import StoragePlan from '../../components/featurespage/StoragePlan'
 import Footer from '../../components/Footer'
 
