@@ -4,6 +4,8 @@ import Home from './pages/HomePage'
 import ContactUs from './pages/ContactPage'
 import Features from './pages/FeaturesPage'
 import UsecasesPage from './pages/UsecasesPage'
+import SecurityPage from './pages/SecurityPage'
+
 
 import ToolsDetails from './components/featurespage/ToolsDetails'
 import Feature1 from './pages/featurespage/feature1'
@@ -34,9 +36,9 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path='/features' element={<Features />} />
           <Route path='/use-cases' element={<UsecasesPage />} />
+          <Route path='/security' element={<SecurityPage/>} />
 
           <Route path='/toolsdetails' element={<ToolsDetails />} />
-
           <Route path='/feature1-details' element={<Feature1/>} />
           <Route path='/feature2-details' element={<Feature2/>} />
           <Route path='/feature3page' element={<Feature3page />} />
