@@ -28,6 +28,7 @@ import Security2page from './pages/securitypages/security2page'
 import Security3page from './pages/securitypages/security3page'
 import Security4page from './pages/securitypages/security4page'
 import Security5page from './pages/securitypages/security5page'
+import IntegrationPage from './pages/IntegrationPage'
 
 
 
@@ -41,6 +42,7 @@ function App() {
           <Route path='/features' element={<Features />} />
           <Route path='/use-cases' element={<UsecasesPage />} />
           <Route path='/security' element={<SecurityPage/>} />
+          <Route path='/integrations' element={<IntegrationPage/>} />
 
           <Route path='/toolsdetails' element={<ToolsDetails />} />
           <Route path='/feature1-details' element={<Feature1/>} />
