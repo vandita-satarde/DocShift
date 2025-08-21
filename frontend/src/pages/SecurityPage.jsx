@@ -27,7 +27,7 @@ function SecurityPage() {
                 <p className='text-[26px] md:text-[75px] font-semibold leading-8 md:leading-23 tracking-wider '> Enterprise-Grade<br/> Security and Compliance</p>
                 <p className='text-[12px] md:text-[24px] py-4 md:py-13 md:leading-11'>DocShift is more than a document management system (DMS)—it’s a comprehensive<br/> ecosystem designed to address modern document challenges.</p>
                 <button className='cursor-pointer w-[100px] md:w-[240px] h-[30px] md:h-[65px] bg-[#FD6B70] text-white text-[13px] md:text-[24px] rounded-sm '>Get Started</button>
-                <div className='flex text-left mt-15 gap-40 text-[17px] text-[#000000CC] leading-9 tracking-widest'>
+                <div className='flex text-left mt-10 md:mt-15 gap-5 md:gap-40 text-[8px] md:text-[17px] text-[#000000CC]  md:leading-9 tracking-wider md:tracking-widest'>
                     <p>Instead of juggling iLovePDF for storage, DocShift centralizes everything.</p>
                     <p>Instead of juggling iLovePDF for storage, DocShift centralizes everything.</p>
                     <p>Instead of juggling iLovePDF for storage, DocShift centralizes everything.</p>
@@ -35,10 +35,10 @@ function SecurityPage() {
             </div>
 
             {/* compliance & security */}
-            <div className='text-white bg-[#0D1632] text-center py-10 '>
-                <p className='text-[45px] '>Compliance & Security</p>
-                <p className='text-[15px] '>DocShift is more than a document management system (DMS)—it’s a<br/> comprehensive ecosystem designed to address modern document challenges.</p>
-                <div className='py-14 flex flex-wrap justify-center gap-18 '>
+            <div className='text-white bg-[#0D1632] text-center py-6 md:py-10 '>
+                <p className='text-[22px] md:text-[45px] '>Compliance & Security</p>
+                <p className='text-[10px] md:text-[15px] '>DocShift is more than a document management system (DMS)—it’s a<br className='hidden md:block'/> comprehensive ecosystem designed to address modern document challenges.</p>
+                <div className='py-14 flex flex-wrap justify-center gap-5 md:gap-18 '>
                     <Compliance 
                         image={circle1}
                         name='Document Access Logs'
@@ -73,31 +73,31 @@ function SecurityPage() {
             </div>
 
             {/* Document Access Logs */}
-            <div className='bg-[#F5F9FE] text-[#0E1836] tracking-wider text-center p-30'>
-                <p className='text-[48px] '>Document Access Logs</p>
-                <p className='text-[16px] '>Track Every Interaction with Detailed Audit Logs</p>
-                <div className='flex py-15 gap-10 '>
-                    <img src={Rectangle1} className='w-[620px] ' />
-                    <div className='space-y-15'>
-                        <div className='border px-8 py-4 rounded-lg flex justify-center items-center gap-9'>
-                            <img src={iso} className='w-20 h-20' />
-                            <div className='text-left space-y-1'>
-                                <p className='text-[32px] '>ISO</p>
-                                <p className='text-[23px] leading-6 '>Adheres to information security management standards.</p>
+            <div className='bg-[#F5F9FE] text-[#0E1836] tracking-wide md:tracking-wider text-center p-2 md:p-30'>
+                <p className='text-[20px] md:text-[48px] '>Document Access Logs</p>
+                <p className='text-[8px] md:text-[16px] '>Track Every Interaction with Detailed Audit Logs</p>
+                <div className='flex py-6 md:py-15 gap-2 md:gap-10 '>
+                    <img src={Rectangle1} className='w-[150px] md:w-[620px] ' />
+                    <div className='space-y-1 md:space-y-15'>
+                        <div className='border px-1 md:px-8 py-1 md:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-9'>
+                            <img src={iso} className='w-5 md:w-20 h-5 md:h-20' />
+                            <div className='text-left md:space-y-1'>
+                                <p className='text-[9px] md:text-[32px] '>ISO</p>
+                                <p className='text-[6px] md:text-[23px] leading-2 md:leading-6 '>Adheres to information security management standards.</p>
                             </div>
                         </div>
-                        <div className='border px-8 py-4 rounded-lg flex justify-center items-center gap-9'>
-                            <img src={hipaa} className='w-20 h-20' />
-                            <div className='text-left space-y-1'>
-                                <p className='text-[32px] '>HIPAA</p>
-                                <p className='text-[23px] leading-6 '>Protects patient data with encrypted storage and access logs.</p>
+                        <div className='border px-1 md:px-8 py-1 md:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-9'>
+                            <img src={hipaa} className='w-5 md:w-20 h-5 md:h-20' />
+                            <div className='text-left md:space-y-1'>
+                                <p className='text-[9px] md:text-[32px] '>HIPAA</p>
+                                <p className='text-[6px] md:text-[23px] leading-2 md:leading-6 '>Protects patient data with encrypted storage and access logs.</p>
                             </div>
                         </div>
-                        <div className='border px-8 py-4 rounded-lg flex justify-center items-center gap-9'>
-                            <img src={gdpr} className='w-20 h-20' />
-                            <div className='text-left space-y-1'>
-                                <p className='text-[32px] '>GDPR</p>
-                                <p className='text-[23px] leading-6 '>Supports data subject rights, including data deletion and portability.</p>
+                        <div className='border px-1 md:px-8 py-1 md:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-9'>
+                            <img src={gdpr} className='w-5 md:w-20 h-5 md:h-20' />
+                            <div className='text-left md:space-y-1'>
+                                <p className='text-[9px] md:text-[32px] '>GDPR</p>
+                                <p className='text-[6px] md:text-[23px] leading-2 md:leading-6 '>Supports data subject rights, including data deletion and portability.</p>
                             </div>
                         </div>
                     </div>
