@@ -23,7 +23,11 @@ import Usecase2page from './pages/usecasepages/usecase2page'
 import Usecase3page from './pages/usecasepages/usecase3page'
 import Usecase4page from './pages/usecasepages/usecase4page'
 import Usecase5page from './pages/usecasepages/usecase5page'
-
+import Security1page from './pages/securitypages/security1page'
+import Security2page from './pages/securitypages/security2page'
+import Security3page from './pages/securitypages/security3page'
+import Security4page from './pages/securitypages/security4page'
+import Security5page from './pages/securitypages/security5page'
 
 
 
@@ -55,6 +59,12 @@ function App() {
           <Route path='/usecase3page' element={<Usecase3page />} />
           <Route path='/usecase4page' element={<Usecase4page />} />
           <Route path='/usecase5page' element={<Usecase5page />} />
+
+          <Route path='/security1page' element={<Security1page />} />
+          <Route path='/security2page' element={<Security2page />} />
+          <Route path='/security3page' element={<Security3page />} />
+          <Route path='/security4page' element={<Security4page />} />
+          <Route path='/security5page' element={<Security5page />} />
         </Routes>
       </div>
     </Router>

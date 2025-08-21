@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import Navbar from '../components/Navbar'
 import Compliance from '../components/securitycomponents/compliance'
 import Permission from '../components/securitycomponents/permission'
@@ -35,40 +37,50 @@ function SecurityPage() {
             </div>
 
             {/* compliance & security */}
-            <div className='text-white bg-[#0D1632] text-center py-6 md:py-10 '>
+            <div className='text-white bg-[#0D1632] px-6 md:px-0 text-center py-10 '>
                 <p className='text-[22px] md:text-[45px] '>Compliance & Security</p>
-                <p className='text-[10px] md:text-[15px] '>DocShift is more than a document management system (DMS)—it’s a<br className='hidden md:block'/> comprehensive ecosystem designed to address modern document challenges.</p>
-                <div className='py-14 flex flex-wrap justify-center gap-5 md:gap-18 '>
-                    <Compliance 
+                <p className='text-[10px] md:text-[15px]  '>DocShift is more than a document management system (DMS)—it’s a<br className='hidden md:block'/> comprehensive ecosystem designed to address modern document challenges.</p>
+                <div className='py-7 md:py-14 flex flex-wrap justify-center gap-5 md:gap-18 '>
+                    <Link to='/security1page' >
+                        <Compliance 
                         image={circle1}
                         name='Document Access Logs'
                         subcontent='Track Every Interaction with Detailed Audit Logs'
                         content='DocShift’s document access logs provide a comprehensive record of who accessed, viewed, edited, or shared your documents, ensuring transparency and compliance.'
                     />
+                    </Link>
+                    <Link to='/security2page' >
                     <Compliance 
                         image={circle2}
                         name='Permission Groups'
                         subcontent='Control Access with Granular Permissions'
                         content='DocShift’s permission groups allow you to assign roles (Admin, Manager, Employee) to control who can view, edit, or download documents.'
                     />
+                    </Link>
+                    <Link to='/security3page' >
                     <Compliance 
                         image={circle3}
                         name='ISO / HIPAA / GDPR Ready'
                         subcontent='Meet Global Compliance Standards'
                         content='DocShift is designed to comply with ISO 27001, HIPAA, and GDPR, ensuring your documents meet regulatory requirements.'
                     />
+                    </Link>
+                    <Link to='/security4page' >
                     <Compliance 
                         image={circle4}
                         name='Data Retention Rules'
                         subcontent='Automate Compliance with Retention Policies'
                         content='Set retention periods for documents to comply with regulatory requirements or internal policies.'
                     />
+                    </Link>
+                    <Link to='/security5page' >
                     <Compliance 
                         image={circle5}
                         name='Secure Sharing Links'
                         subcontent='Share Documents with Confidence'
                         content='Share documents securely with expiring, password-protected links.'
                     />
+                    </Link>
                 </div>
             </div>
 
