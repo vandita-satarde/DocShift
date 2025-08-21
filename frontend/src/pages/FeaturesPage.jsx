@@ -108,8 +108,8 @@ function Feature() {
             <div className='bg-[#F5F9FE]'>
                 <p className='text-[26px] md:text-[48px] text-[#0E1836] text-center pt-10 md:pt-30'>Explore Our Features</p>
                 <div className='flex flex-wrap justify-center gap-x-3 md:gap-x-10 gap-y-6 md:gap-y-14 py-5 md:py-12 '>
-                    <Link to='/feature1-details' ><Features name='File Upload & Storage' /></Link>
-                    <Link to='/feature2-details'><Features name='Smart Tagging' /></Link>
+                    <Link to='/feature1page' ><Features name='File Upload & Storage' /></Link>
+                    <Link to='/feature2page'><Features name='Smart Tagging' /></Link>
                     <Link to='/feature3page'><Features name='Document Version Control' /></Link>
                     <Link to='/feature4page'><Features name='Expiry Date Tracking' /></Link>
                     <Link to='/feature5page'><Features name='Role-Based Sharing' /></Link>
