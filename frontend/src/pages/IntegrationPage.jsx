@@ -46,32 +46,32 @@ function IntegrationPage() {
                         />
                     </Link>
                     <Link to='/integration2page'>
-                    <UseCases
-                        maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl flex-row-reverse' image={integration2} img='rounded-none' name='Dropbox' subcontent='Integrate with Dropbox for Additional Storage' showbutton={false}
-                        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                    />
+                        <UseCases
+                            maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl flex-row-reverse' image={integration2} img='rounded-none' name='Dropbox' subcontent='Integrate with Dropbox for Additional Storage' showbutton={false}
+                            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                        />
                     </Link>
                     <Link to='/integration3page'>
-                    <UseCases
-                        maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl' image={integration3} img='rounded-none' name='Email Upload' subcontent='Upload Documents Directly via Email' showbutton={false}
-                        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                    />
+                        <UseCases
+                            maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl' image={integration3} img='rounded-none' name='Email Upload' subcontent='Upload Documents Directly via Email' showbutton={false}
+                            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                        />
                     </Link>
                     <Link to='/integration4page'>
-                    <UseCases
-                        maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl flex-row-reverse' image={integration4} img='rounded-none' name='Zapier' subcontent='Automate Workflows with Zapier' showbutton={false}
-                        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                    />
+                        <UseCases
+                            maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl flex-row-reverse' image={integration4} img='rounded-none' name='Zapier' subcontent='Automate Workflows with Zapier' showbutton={false}
+                            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                        />
                     </Link>
                     <Link to='/integration5page'>
-                    <UseCases
-                        maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl' image={integration5} img='rounded-none' name='APIs for Custom Portals' subcontent='Build Custom Integrations with DocShift’s API' showbutton={false}
-                        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                    />
+                        <UseCases
+                            maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl' image={integration5} img='rounded-none' name='APIs for Custom Portals' subcontent='Build Custom Integrations with DocShift’s API' showbutton={false}
+                            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                        />
                     </Link>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }

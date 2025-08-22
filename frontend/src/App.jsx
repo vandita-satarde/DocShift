@@ -6,6 +6,7 @@ import Features from './pages/FeaturesPage'
 import UsecasesPage from './pages/UsecasesPage'
 import SecurityPage from './pages/SecurityPage'
 import IntegrationPage from './pages/IntegrationPage'
+import PricingPage from './pages/PricingPage'
 
 
 import ToolsDetails from './components/featurespage/ToolsDetails'
@@ -40,7 +41,6 @@ import Integration5page from './pages/integrationpages/integration5page'
 
 
 
-
 function App() {
   return (
     <Router>
@@ -52,6 +52,7 @@ function App() {
           <Route path='/use-cases' element={<UsecasesPage />} />
           <Route path='/security' element={<SecurityPage/>} />
           <Route path='/integrations' element={<IntegrationPage/>} />
+          <Route path='/pricing' element={<PricingPage/>} />
 
           <Route path='/toolsdetails' element={<ToolsDetails />} />
           

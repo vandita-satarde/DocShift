@@ -26,6 +26,7 @@ import tool16 from '../assets/images/feturespage/tool-16.png'
 import shield from '../assets/images/feturespage/shield.png'
 import rectangle1 from '../assets/images/feturespage/Rectangle1.png'
 import rectangle2 from '../assets/images/feturespage/Rectangle2.png'
+
 import { Link } from 'react-router-dom'
 
 
