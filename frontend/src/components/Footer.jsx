@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/icons/DocShift-logo.png'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -29,7 +30,7 @@ function Footer() {
           <p>Guide</p>
           <p>Webinars</p>
           <p>FAQs</p>
-          <p>Support</p>
+          <Link to='/support' ><p>Support</p></Link>
         </div>
         </div>
       </div>

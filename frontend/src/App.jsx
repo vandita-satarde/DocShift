@@ -7,6 +7,7 @@ import UsecasesPage from './pages/UsecasesPage'
 import SecurityPage from './pages/SecurityPage'
 import IntegrationPage from './pages/IntegrationPage'
 import PricingPage from './pages/PricingPage'
+import SupportPage from './pages/SupportPage'
 
 
 import ToolsDetails from './components/featurespage/ToolsDetails'
@@ -53,6 +54,8 @@ function App() {
           <Route path='/security' element={<SecurityPage/>} />
           <Route path='/integrations' element={<IntegrationPage/>} />
           <Route path='/pricing' element={<PricingPage/>} />
+
+          <Route path='/support' element={<SupportPage/>} />
 
           <Route path='/toolsdetails' element={<ToolsDetails />} />
           
