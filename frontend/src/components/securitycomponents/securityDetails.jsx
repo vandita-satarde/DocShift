@@ -13,7 +13,7 @@ function securityDetails({ name, subcontent, content, showButton=true , features
                 )}
             </div>
 
-            <div className='bg-[#F5F9FE] text-[#0E1836] pt-8 md:pt-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] text-[#0E1836] pt-4 md:pt-15 px-10 md:px-30'>
                 <p className='text-[20px] md:text-[58px] font-bold text-center '>{features}</p>
             </div>
         </>
