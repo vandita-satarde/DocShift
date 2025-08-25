@@ -13,10 +13,10 @@ function Footer() {
         <div className='flex flex-col md:flex-row gap-8 md:gap-10 lg:gap-55'>
           <div className='space-y-1 md:space-y-3'>
           <p className='text-white'>Quick Links</p>
-          <p>Home</p>
+          <Link to='/'><p>Home</p></Link>
           <p>About</p>
-          <p>Features</p>
-          <p>Contact</p>
+          <Link to='/features'><p>Features</p></Link>
+          <Link to='/contact'><p>Contact</p></Link>
         </div>
         <div className='space-y-1 md:space-y-3'>
           <p className='text-white'>Company</p>
