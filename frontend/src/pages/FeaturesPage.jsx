@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import Navbar from '../components/Navbar'
 import AllTools from '../components/featurespage/AllTools'
 import Features from '../components/featurespage/Features'
+import ToolsDetails from '../components/featurespage/ToolsDetails'
 import Footer from '../components/Footer'
 
 import featureMain1 from '../assets/images/feturespage/features-main-1.png'
@@ -26,12 +29,27 @@ import tool16 from '../assets/images/feturespage/tool-16.png'
 import shield from '../assets/images/feturespage/shield.png'
 import rectangle1 from '../assets/images/feturespage/Rectangle1.png'
 import rectangle2 from '../assets/images/feturespage/Rectangle2.png'
-
-import { Link } from 'react-router-dom'
-
+import toolDetails1 from '../assets/images/feturespage/img-pdf.png'
+import toolDetails2 from '../assets/images/feturespage/pdf-img.png'
+import toolDetails3 from '../assets/images/feturespage/mergepdf.png'
+import toolDetails4 from '../assets/images/feturespage/word-pdf.png'
+import toolDetails5 from '../assets/images/feturespage/excel-pdf.png'
+import toolDetails6 from '../assets/images/feturespage/pdf-ppt.png'
+import toolDetails7 from '../assets/images/feturespage/removebg.png'
+import toolDetails8 from '../assets/images/feturespage/removepg.png'
+import toolDetails9 from '../assets/images/feturespage/compdf.png'
+import toolDetails10 from '../assets/images/feturespage/splitpdf.png'
+import toolDetails11 from '../assets/images/feturespage/aiPdfEditor.png'
+import toolDetails12 from '../assets/images/feturespage/docScreen.png'
+import toolDetails13 from '../assets/images/feturespage/plagScreen.png'
+import toolDetails14 from '../assets/images/feturespage/sumtxt.png'
+import toolDetails15 from '../assets/images/feturespage/speech-txt.png'
+import toolDetails16 from '../assets/images/feturespage/txt-speech.png'
 
 
 function Feature() {
+    const [selectedTool, setSelectedTool] = useState(null)
+
     return (
         <>
             <Navbar />
@@ -54,22 +72,168 @@ function Feature() {
             <div className='bg-[#F5F9FE] pt-40 md:pt-1'>
                 <p className='text-[#0E1836] text-[28px] md:text-[48px] text-center '>Unlock the All Tools</p>
                 <div className='flex flex-wrap gap-4 md:gap-10 justify-center py-6 md:py-20'>
-                    <Link to='/toolsdetails'><AllTools image={tool1} name='Image to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#1964F0] ' /></Link>
-                    <AllTools image={tool2} name='PDF to Image' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#1A8A89] ' />
-                    <AllTools image={tool3} name='Merge PDF’s' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#F5AE5E] ' />
-                    <AllTools image={tool4} name='Word to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#9673E5] ' />
-                    <AllTools image={tool5} name='Excel to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#F019E9] ' />
-                    <AllTools image={tool6} name='PDF to PPT' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#80843D] ' />
-                    <AllTools image={tool7} name='Background Remove ' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#EDF55E] ' />
-                    <AllTools image={tool8} name='Remove pages' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#FD3538] ' />
-                    <AllTools image={tool9} name='Compare PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#95BAFF] ' />
-                    <AllTools image={tool10} name='Split PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#42FFFD] ' />
-                    <AllTools image={tool11} name='AI PDF Editor' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#F2D6BC] ' />
-                    <AllTools image={tool12} name='Document Screener' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#B4B0B0] ' />
-                    <AllTools image={tool13} name='Plagiarism Screener' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#00B7FF] ' />
-                    <AllTools image={tool14} name='Summarize Text' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#8F191B] ' />
-                    <AllTools image={tool15} name='Speech to Text' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#FF8D23] ' img='h-11' />
-                    <AllTools image={tool16} name='Text to Speech' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#0C50AF] ' />
+
+                    {/* All Tools */}
+
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails1, name: "Image to PDF",
+                            subtext: "Convert images into PDF instantly.",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool1} name='Image to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#1964F0] ' />
+                    </div>
+
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails2, name: "PDF To Image",
+                            subtext: "Instant PDF To Image Conversion",
+                            description: "Convert PDF to JPG, PNG, TIFF, BMP, and other image formats with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool2} name='PDF to Image' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#1A8A89] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails3, name: "Merge PDF’s",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool3} name='Merge PDF’s' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#F5AE5E] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails4, name: "Word to PDF",
+                            subtext: "Instant PDF to Word Conversion",
+                            description: "Convert PDF to Word with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool4} name='Word to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#9673E5] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails5, name: "Excel to PDF",
+                            subtext: "Instant PDF to Excel Conversion",
+                            description: "Convert PDF to Excel with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool5} name='Excel to PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#F019E9] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails6, name: "PDF To PPT",
+                            subtext: "Instant PDF to PPt Conversion",
+                            description: "Convert PDF to PPT with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool6} name='PDF to PPT' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#80843D] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails7, name: "Background Remove",
+                            subtext: "Instant Background Remove",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool7} name='Background Remove ' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#EDF55E] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails8, name: "Remove pages",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool8} name='Remove pages' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#FD3538] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails9, name: "Compare PDF",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool9} name='Compare PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#95BAFF] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails10, name: "Split PDF",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool10} name='Split PDF' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#42FFFD] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails11, name: "AI PDF Editor",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool11} name='AI PDF Editor' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#F2D6BC] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails12, name: "Document Screener",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool12} name='Document Screener' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#B4B0B0] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails13, name: "Plagiarism Screener",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool13} name='Plagiarism Screener' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#00B7FF] ' />
+                    </div>
+
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails14, name: "Summarize Text",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool14} name='Summarize Text' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#8F191B] ' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails15, name: "Speech to Text",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool15} name='Speech to Text' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#FF8D23] ' img='h-11' />
+                    </div>
+                    <div
+                        onClick={() => setSelectedTool({
+                            image: toolDetails16, name: "Text to Speech",
+                            subtext: "Instant Image-to-PDF Conversion",
+                            description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
+                        })}
+                    >
+                        <AllTools image={tool16} name='Text to Speech' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#0C50AF] ' />
+                    </div>
+
+
+                    {/* Pop-up */}
+                    {selectedTool && (
+                        <ToolsDetails
+                            isOpen={!!selectedTool}
+                            onClose={() => setSelectedTool(null)}
+                            image={selectedTool.image}
+                            name={selectedTool.name}
+                            subtext={selectedTool.subtext}
+                            description={selectedTool.description}
+                        />
+                    )}
                 </div>
             </div>
 
