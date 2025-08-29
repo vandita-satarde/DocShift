@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Sidebar from "../components/Sidebar";
 
 function AdminPanel() {
     const [contacts, setContacts] = useState([]);
@@ -56,7 +57,8 @@ function AdminPanel() {
 
     return (
         <>
-            <div className="bg-[#F5F9FE] min-h-screen p-8 md:p-16">
+            <Sidebar />
+            <div className="ml-70 bg-[#F5F9FE] min-h-screen p-8 md:p-16">
                 <h2 className=" text-[#0f2769] text-[25px] md:text-[40px] font-bold mb-8">
                     Contact Submissions
                 </h2>
