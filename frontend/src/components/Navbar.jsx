@@ -10,15 +10,15 @@ function Navbar() {
 
     return (
         <>
-            <div className='fixed top-0 left-0 w-full z-50 bg-[#0E1836] text-[19px] font-[400] text-white flex flex-col xl:flex-row xl:items-center justify-between px-6 xl:px-[120px] py-5 xl:h-[110px]'>
+            <div className='fixed top-0 left-0 w-full z-50 bg-[#0E1836] text-[19px] font-[400] text-white flex flex-col md:flex-row md:items-center justify-between px-6 md:px-[120px] py-5 md:h-[100px]'>
                 {/* Logo and hamburger */}
                 <div className='flex justify-between items-center w-full xl:w-auto'>
                     <Link to="/">
-                        <img src={logo} className='w-[150px] h-[40px]' />
+                        <img src={logo} className='w-[100px] md:w-[170px] h-auto' />
                     </Link>
                     <div className='xl:hidden'>
                         <button onClick={toggleMenu}>
-                            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                            {isOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
                         </button>
                     </div>
                 </div>

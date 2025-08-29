@@ -25,11 +25,11 @@ function SecurityPage() {
             <Navbar />
 
             {/* herosection */}
-            <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[80px] md:mt-[110px] '>
-                <p className='text-[26px] md:text-[75px] font-semibold leading-8 md:leading-23 tracking-wider '> Enterprise-Grade<br/> Security and Compliance</p>
-                <p className='text-[12px] md:text-[24px] py-4 md:py-13 md:leading-11'>DocShift is more than a document management system (DMS)—it’s a comprehensive<br/> ecosystem designed to address modern document challenges.</p>
+            <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[68px] md:mt-[90px] '>
+                <p className='text-[26px] md:text-[80px] font-semibold leading-8 md:leading-23 tracking-wider '> Enterprise-Grade<br/> Security and Compliance</p>
+                <p className='text-[12px] md:text-[22px] py-4 md:py-13 md:leading-11'>DocShift is more than a document management system (DMS)—it’s a comprehensive<br className='hidden md:block'/> ecosystem designed to address modern document challenges.</p>
                 <button className='cursor-pointer w-[100px] md:w-[240px] h-[30px] md:h-[65px] bg-[#FD6B70] text-white text-[13px] md:text-[24px] rounded-sm '>Get Started</button>
-                <div className='flex text-left mt-10 md:mt-15 gap-5 md:gap-40 text-[8px] md:text-[17px] text-[#000000CC]  md:leading-9 tracking-wider md:tracking-widest'>
+                <div className='flex text-left mt-12 md:mt-15 px-2 gap-12 md:gap-40 text-[8px] md:text-[17px] text-[#000000CC]  md:leading-9 tracking-wider md:tracking-widest'>
                     <p>Instead of juggling iLovePDF for storage, DocShift centralizes everything.</p>
                     <p>Instead of juggling iLovePDF for storage, DocShift centralizes everything.</p>
                     <p>Instead of juggling iLovePDF for storage, DocShift centralizes everything.</p>
@@ -37,10 +37,10 @@ function SecurityPage() {
             </div>
 
             {/* compliance & security */}
-            <div className='text-white bg-[#0D1632] px-6 md:px-0 text-center py-10 '>
-                <p className='text-[22px] md:text-[45px] '>Compliance & Security</p>
-                <p className='text-[10px] md:text-[15px]  '>DocShift is more than a document management system (DMS)—it’s a<br className='hidden md:block'/> comprehensive ecosystem designed to address modern document challenges.</p>
-                <div className='py-7 md:py-14 flex flex-wrap justify-center gap-5 md:gap-18 '>
+            <div className='text-white bg-[#0D1632] px-6 md:px-0 text-center py-10 space-y-1 '>
+                <p className='text-[26px] md:text-[45px] '>Compliance & Security</p>
+                <p className='text-[11px] md:text-[15px]  '>DocShift is more than a document management system (DMS)—it’s a<br className='hidden md:block'/> comprehensive ecosystem designed to address modern document challenges.</p>
+                <div className='py-7 md:py-14 flex flex-wrap justify-center gap-8 md:gap-18 '>
                     <Link to='/security1page' >
                         <Compliance 
                         image={circle1}
@@ -85,11 +85,11 @@ function SecurityPage() {
             </div>
 
             {/* Document Access Logs */}
-            <div className='bg-[#F5F9FE] text-[#0E1836] tracking-wide md:tracking-wider text-center p-2 md:p-30'>
+            <div className='bg-[#F5F9FE] text-[#0E1836] tracking-wide md:tracking-wider text-center py-4 md:py-30 px-3 md:px-30'>
                 <p className='text-[20px] md:text-[48px] '>Document Access Logs</p>
                 <p className='text-[8px] md:text-[16px] '>Track Every Interaction with Detailed Audit Logs</p>
                 <div className='flex py-6 md:py-15 gap-2 md:gap-10 '>
-                    <img src={Rectangle1} className='w-[150px] md:w-[620px] ' />
+                    <img src={Rectangle1} className='w-[150px] md:w-[620px] rounded-md md:rounded-lg' />
                     <div className='space-y-1 md:space-y-15'>
                         <div className='border px-1 md:px-8 py-1 md:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-9'>
                             <img src={iso} className='w-5 md:w-20 h-5 md:h-20' />

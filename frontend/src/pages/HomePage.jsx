@@ -33,7 +33,7 @@ import customer2 from "../assets/images/homeimages/customer2.png"
 import customer3 from "../assets/images/homeimages/customer3.png"
 
 
-const  testimonialsData = [
+const testimonialsData = [
   {
     profile: customer1,
     content:
@@ -72,7 +72,7 @@ function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className='bg-[#0E1836] flex flex-col md:flex-row h-[590px] md:h-[625px] px-8 md:px-30 py-8 md:py-18 mt-[80px] md:mt-[105px] '>
+      <div className='bg-[#0E1836] flex flex-col md:flex-row h-[590px] md:h-[625px] px-8 md:px-30 py-8 md:py-18 mt-[66px] md:mt-[90px] '>
         <div className='text-[#FFFFFF] '>
           <p className='text-[34px] md:text-[65px] md:leading-20 '>AI-Powered Document Management Platform</p>
           <p className='text-[12px] md:text-[19px] my-4 md:my-9 mr-1 md:mr-60 md:leading-9 '>DocShift is a powerful suite of tools designed to streamline your workflow and boost your productivity. From AI-powered writing assistance to advanced plagiarism detection.</p>
@@ -110,7 +110,7 @@ function Home() {
         <p className='text-[30px] md:text-[50px] '>How DocShift Works</p>
         <p className='text-[10px] md:text-[15px] pt-2 pb-14'>DocShift’s workflow is designed for simplicity and power:</p>
 
-        <div className='flex flex-wrap justify-center gap-7'>
+        <div className='flex flex-wrap justify-center md:gap-7'>
           <HowDocShift logo={feature1} title='Upload & Organize' content='Securely upload files to encrypted folders using drag-and-drop. Organize with AI-driven smart tagging for quick retrieval.' />
           <HowDocShift logo={feature2} title='Edit & Convert' content='Convert PDFs to Word, Excel, or JPG, merge files, or compress documents with one click. Use AI to generate or rewrite content.' />
           <HowDocShift logo={feature3} title='Collaborate Securely' content='Share files with role-based permissions (Admin, Manager, Employee) via expiring, password-protected links.' />
@@ -121,7 +121,7 @@ function Home() {
 
       {/* Who uses Docshift */}
       <div className='flex ' >
-        <div className='bg-[#0D1632] h-[350px] md:h-[1020px] w-[350px] md:w-[700px] ml-4 md:ml-30 pl-3 md:pl-13 pt-6 md:pt-22 '>
+        <div className='bg-[#0D1632] h-[330px] md:h-[1020px] w-[350px] md:w-[700px] ml-4 md:ml-30 pl-3 md:pl-13 pt-6 md:pt-22 '>
           <p className='text-[#FD6B70] text-[6px] md:text-[15px] '>Who Uses DocShift ?</p>
           <p className='text-[#EEAC5F] text-[12px] md:text-[48px] md:pt-2 pb-1 md:pb-3 '>Who Uses DocShift ?</p>
           <p className='text-[#C0C0C0] text-[9px] md:text-[19px] '>DocShift serves a diverse range of<br />industries.</p>
@@ -152,66 +152,66 @@ function Home() {
       </div>
 
       {/* Customer Testimonials */}
-      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-10 md:py-30 md:h-[700px] '>
+      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-12 md:py-30 md:h-[700px] '>
         <p className='text-[28px] md:text-[50px] '>Customer Testimonials</p>
         <p className='text-[10px] md:text-[14px] md:mt-1 md:mb-25 '>DocShift: Smart Document Management Made Simple.</p>
-        
+
         {/* md: above view without Carousel */}
         <div className='hidden md:block'>
           <div className=' flex flex-col md:flex-row gap-12 md:gap-20  '>
-          <Testimonials 
-            profile={customer1}
-            content='“As a startup, we needed affordable tools without compromising quality. DocShift’s AI writing and PDF tools are a game-changer.”'
-            name='Rajesh Kumar'
-            about='Founder, TechTrend Innovations'
-          />
-          <Testimonials 
-            profile={customer2}
-            content='“DocShift transformed our legal practice. We now manage contracts, NDAs, and client documents in one secure platform, saving hours each week.”'
-            name='Priya Sharma'
-            about='Partner, Sharma & Associates'
-          />
-          <Testimonials 
-            profile={customer3}
-            content='“The plagiarism checker and secure storage make DocShift perfect for our university’s academic workflows.”'
-            name='Dr. Anita Desai'
-            about='Dean, City University'
-          />
-        </div>
+            <Testimonials
+              profile={customer1}
+              content='“As a startup, we needed affordable tools without compromising quality. DocShift’s AI writing and PDF tools are a game-changer.”'
+              name='Rajesh Kumar'
+              about='Founder, TechTrend Innovations'
+            />
+            <Testimonials
+              profile={customer2}
+              content='“DocShift transformed our legal practice. We now manage contracts, NDAs, and client documents in one secure platform, saving hours each week.”'
+              name='Priya Sharma'
+              about='Partner, Sharma & Associates'
+            />
+            <Testimonials
+              profile={customer3}
+              content='“The plagiarism checker and secure storage make DocShift perfect for our university’s academic workflows.”'
+              name='Dr. Anita Desai'
+              about='Dean, City University'
+            />
+          </div>
         </div>
 
         {/* mobile view Carousel*/}
         <div className="md:hidden relative w-full flex justify-center items-center h-[300px]">
-        {testimonialsData.map((item, index) => {
-          // check position relative to activeIndex
-          let position = "opacity-0 scale-75 translate-x-0"; // hidden by default
+          {testimonialsData.map((item, index) => {
+            // check position relative to activeIndex
+            let position = "opacity-0 scale-75 translate-x-0"; // hidden by default
 
-          if (index === activeIndex) {
-            position = "opacity-100 scale-90 z-20"; // center one
-          } else if (index === (activeIndex + 1) % testimonialsData.length) {
-            position = "opacity-50 scale-70 translate-x-1/2 z-10"; // right faded
-          } else if (
-            index ===
-            (activeIndex - 1 + testimonialsData.length) % testimonialsData.length
-          ) {
-            position = "opacity-50 scale-70 -translate-x-1/2 z-10"; // left faded
-          }
+            if (index === activeIndex) {
+              position = "opacity-100 scale-90 z-20"; // center one
+            } else if (index === (activeIndex + 1) % testimonialsData.length) {
+              position = "opacity-50 scale-70 translate-x-1/2 z-10"; // right faded
+            } else if (
+              index ===
+              (activeIndex - 1 + testimonialsData.length) % testimonialsData.length
+            ) {
+              position = "opacity-50 scale-70 -translate-x-1/2 z-10"; // left faded
+            }
 
-          return (
-            <div
-              key={index}
-              className={`absolute transition-all duration-700 ease-in-out ${position}`}
-            >
-              <Testimonials
-                profile={item.profile}
-                content={item.content}
-                name={item.name}
-                about={item.about}
-              />
-            </div>
-          );
-        })}
-      </div>
+            return (
+              <div
+                key={index}
+                className={`absolute transition-all duration-700 ease-in-out ${position}`}
+              >
+                <Testimonials
+                  profile={item.profile}
+                  content={item.content}
+                  name={item.name}
+                  about={item.about}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <ConnectwithUs />

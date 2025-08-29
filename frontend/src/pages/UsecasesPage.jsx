@@ -13,11 +13,11 @@ function UsecasesPage() {
   return (
     <>
         <Navbar />
-        <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[80px] md:mt-[110px] '>
+        <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[68px] md:mt-[90px] '>
 
             {/* herosection */}
-            <p className='text-[26px] md:text-[90px] font-semibold leading-8 md:leading-23 tracking-wider '>Discover DocShift’s<br/> Industry Use Cases</p>
-            <p className='text-[12px] md:text-[25px] py-4 md:py-13 md:leading-11'>DocShift is more than a document management system (DMS)—it’s a comprehensive<br/> ecosystem designed to address modern document challenges.</p>
+            <p className='text-[26px] md:text-[80px] font-semibold leading-9 md:leading-23 tracking-wider '>Discover DocShift’s<br/> Industry Use Cases</p>
+            <p className='text-[12px] md:text-[22px] py-4 md:py-13 md:leading-11'>DocShift is more than a document management system (DMS)—it’s a comprehensive<br className='hidden md:block'/> ecosystem designed to address modern document challenges.</p>
             <button className='cursor-pointer w-[100px] md:w-[240px] h-[30px] md:h-[65px] bg-[#FD6B70] text-white text-[13px] md:text-[24px] rounded-sm '>Get Started</button>
 
             {/* industry use cases */}

@@ -5,7 +5,7 @@ function UsecasesDetails({name, about, div1, div2, div3, features}) {
     return (
         <>
             <div className='text-[#0E1836]'>
-                <div className='bg-[#F5F9FE] text-center px-3 md:px-30 py-14 md:py-18 mt-[80px] md:mt-[110px] '>
+                <div className='bg-[#F5F9FE] text-center px-3 md:px-30 py-14 md:py-18 mt-[68px] md:mt-[110px] '>
                     <p className='text-[22px] md:text-[80px] font-semibold leading-7 md:leading-23 tracking-wider '>DocShift for<br/> {name}</p>
                     <p className='text-[10px] md:text-[20px] px-2 md:px-0 py-2 md:py-13 leading-3 md:leading-10'>Unlock new levels of efficiency and productivity with DocShift, the innovative document<br className='hidden md:block' /> management solution tailored for CA firms. Seamlessly integrate your workflows, automate<br className='hidden md:block'/> tedious tasks, and enhance collaboration across your team</p>
                     <button className='cursor-pointer w-[80px] md:w-[150px] h-[25px] md:h-[45px] bg-[#FD6B70] text-white text-[10px] md:text-[20px] rounded-sm '>Get Started</button>

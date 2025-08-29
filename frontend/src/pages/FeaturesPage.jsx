@@ -55,9 +55,9 @@ function Feature() {
             <Navbar />
 
             {/* herosection */}
-            <div className='flex flex-col md:flex-row justify-center md:justify-start py-25 md:py-40 bg-[#F5F9FE] '>
-                <div className='text-[#0E1836] pl-5 md:pl-35 py-5 md:py-20 text-center md:text-left '>
-                    <p className='text-[34px] md:text-[82px] md:leading-23 font-semibold tracking-widest '>DocShift:<br />Revolutionizing</p>
+            <div className='flex flex-col md:flex-row justify-center md:justify-start py-25 md:py-35 bg-[#F5F9FE] '>
+                <div className='text-[#0E1836] md:pl-35 py-5 md:py-20 text-center md:text-left '>
+                    <p className='text-[26px] md:text-[82px] leading-9 md:leading-23 font-semibold tracking-widest '>DocShift:<br />Revolutionizing</p>
                     <p className='text-[12px] md:text-[19px] my-4 md:my-9 md:leading-9 md:tracking-wider'>DocShift is a powerful suite of tools designed to streamline your<br /> workflow and boost your productivity. From Al-powered writing<br /> assistance to advanced plagiarism detection.</p>
                     <button className='w-[100px] md:w-[150px] h-[30px] md:h-[46px] bg-[#FD6B70] text-[#FFFFFF] rounded-sm text-[13px] md:text-[18px] '>Get Started</button>
                 </div>
@@ -70,11 +70,10 @@ function Feature() {
 
             {/* unlock all tools */}
             <div className='bg-[#F5F9FE] pt-26 md:pt-1'>
-                <p className='text-[#0E1836] text-[28px] md:text-[48px] text-center '>Unlock the All Tools</p>
-                <div className='flex flex-wrap gap-8 md:gap-10 justify-center py-6 md:py-20'>
+                <p className='text-[#0E1836] text-[22px] md:text-[48px] text-center '>Unlock the All Tools</p>
+                <div className='flex flex-wrap gap-4 md:gap-10 justify-center py-4 md:py-20 px-12'>
 
                     {/* All Tools */}
-
                     <div
                         onClick={() => setSelectedTool({
                             image: toolDetails1, name: "Image to PDF",
@@ -210,7 +209,7 @@ function Feature() {
                             description: "Convert JPG, PNG, TIFF, BMP, and other image formats to PDF with a single click. Enjoy fast, lossless output that ensures consistent formatting and easy sharing."
                         })}
                     >
-                        <AllTools image={tool15} name='Speech to Text' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#FF8D23] ' img='h-11' />
+                        <AllTools image={tool15} name='Speech to Text' description='Eliminate the need for multiple one affordable plan.' imgDiv='bg-[#FF8D23] ' img='h-8' />
                     </div>
                     <div
                         onClick={() => setSelectedTool({
@@ -271,8 +270,8 @@ function Feature() {
 
             {/* Explore Our Features */}
             <div className='bg-[#F5F9FE]'>
-                <p className='text-[26px] md:text-[48px] text-[#0E1836] text-center pt-10 md:pt-30'>Explore Our Features</p>
-                <div className='flex flex-wrap justify-center gap-x-7 md:gap-x-10 gap-y-10 md:gap-y-14 py-5 md:py-12 '>
+                <p className='text-[26px] md:text-[48px] text-[#0E1836] text-center pt-11 md:pt-30'>Explore Our Features</p>
+                <div className='flex flex-wrap justify-center gap-x-6 md:gap-x-10 gap-y-9 md:gap-y-14 py-4 md:py-12 '>
                     <Link to='/feature1page' ><Features name='File Upload & Storage' /></Link>
                     <Link to='/feature2page'><Features name='Smart Tagging' /></Link>
                     <Link to='/feature3page'><Features name='Document Version Control' /></Link>

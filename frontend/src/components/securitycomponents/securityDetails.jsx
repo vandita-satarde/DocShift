@@ -3,8 +3,8 @@ import React from 'react'
 function securityDetails({ name, subcontent, content, showButton=true , features }) {
     return (
         <>
-            <div className='bg-[#0E1836] text-white text-center px-3 md:px-75 py-14 md:py-24 mt-[80px] md:mt-[109px] tracking-wider space-y-3 md:space-y-13 '>
-                <p className='text-[22px] md:text-[82px] font-semibold leading-7 md:leading-24 tracking-widest '>{name}</p>
+            <div className='bg-[#0E1836] text-white text-center px-3 md:px-75 py-14 md:py-24 mt-[65px] md:mt-[109px] tracking-wider space-y-3 md:space-y-13 '>
+                <p className='text-[26px] md:text-[82px] font-semibold leading-7 md:leading-24 tracking-widest '>{name}</p>
                 <p className='text-[10px] md:text-[24px] px-2 md:px-0 leading-3 md:leading-10'>{subcontent}</p>
                 <p className='text-[10px] md:text-[19px] px-2 md:px-0 leading-3 md:leading-9 '>{content}</p>
                 {showButton && (

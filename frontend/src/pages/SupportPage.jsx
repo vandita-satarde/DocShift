@@ -8,7 +8,7 @@ function SupportPage() {
     return (
         <>
             <Navbar />
-            <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[80px] md:mt-[110px] '>
+            <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[80px] md:mt-[90px] '>
                 <p className='text-[26px] md:text-[75px] font-semibold leading-8 md:leading-23 tracking-wider '> Support – DocShift: Your<br /> Success, Our Priority</p>
                 <p className='text-[12px] md:text-[24px] py-4 md:py-13 md:leading-11'>DocShift’s 24/7 support ensures you get the most out of our platform. Whether you’re<br /> troubleshooting uploads, setting up folder sharing, or recovering files, our team is here to help.<br /> Below is an accordion-style breakdown of common support topics.</p>
             </div>
