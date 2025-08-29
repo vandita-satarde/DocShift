@@ -17,7 +17,7 @@ function usecase5page() {
                 features='Key Benefits'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30 -space-y-2 md:space-y-0'>
                 <Subfeature textColor='text-[#0E1836]' name='Plagiarism Checker' description='Scan student papers for originality, with detailed reports and AI rewriting suggestions.' />
                 <Subfeature textColor='text-[#0E1836]' name='Document Templates' description='Create syllabi, certificates, or grading sheets with customizable templates.' />
                 <Subfeature textColor='text-[#0E1836]' name='Secure Storage' description='Store student records in encrypted folders, accessible only to authorized faculty.' />

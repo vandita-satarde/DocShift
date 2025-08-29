@@ -17,7 +17,7 @@ function usecase4page() {
                 features='Key Benefits'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30 -space-y-2 md:space-y-0'>
                 <Subfeature textColor='text-[#0E1836]' name='AI Report Generation' description='Generate board reports, financial summaries, or proposals using ChatGPT-powered tools, with tone control (formal, conversational).' />
                 <Subfeature textColor='text-[#0E1836]' name='Document Conversion' description=' Convert presentations to PDF or merge multiple reports into a single file for stakeholder reviews.' />
                 <Subfeature textColor='text-[#0E1836]' name='Role-Based Sharing' description='Share documents with specific teams (e.g., HR, Finance) using granular permissions.' />

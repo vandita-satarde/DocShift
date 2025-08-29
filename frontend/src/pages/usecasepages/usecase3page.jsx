@@ -17,7 +17,7 @@ function usecase3page() {
                 features='Key Benefits'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30 -space-y-2 md:space-y-0'>
                 <Subfeature textColor='text-[#0E1836]' name='Encrypted Storage' description='Store patient records in AES-256 encrypted folders, accessible only to authorized personnel.' />
                 <Subfeature textColor='text-[#0E1836]' name='Access Logs' description='Track who accessed records and when, ensuring compliance with HIPAA regulations.' />
                 <Subfeature textColor='text-[#0E1836]' name='Secure Sharing' description=' Share medical reports with patients or specialists via expiring, encrypted links.' />

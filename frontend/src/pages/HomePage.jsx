@@ -5,12 +5,13 @@ import WhyDocShift from '../components/WhyDocShift'
 import HomeTools from '../components/HomeTools'
 import HowDocShift from '../components/HowDocShift';
 import Testimonials from '../components/Testimonials';
+import ConnectwithUs from '../components/ConnectwithUs';
 import Footer from '../components/Footer'
 
-import homeImage from '../assets/images/home-2.png'
+import homeImage from '../assets/images/herosection.png'
 import image from '../assets/images/image.jpg'
 import logo2 from '../assets/icons/logo-2.png'
-import image2 from '../assets/images/home-3.png'
+import homeImage2 from '../assets/images/mainsection.png'
 import circle1 from '../assets/images/homeimages/Group 6.png'
 import circle2 from '../assets/images/homeimages/Group 7.png'
 import circle3 from '../assets/images/homeimages/Group 8.png'
@@ -21,13 +22,15 @@ import rectangle2 from '../assets/images/homeimages/Rectangle2.png'
 import rectangle3 from '../assets/images/homeimages/Rectangle3.png'
 import rectangle4 from '../assets/images/homeimages/Rectangle4.png'
 import rectangle5 from '../assets/images/homeimages/Rectangle5.png'
+import rectangle6 from '../assets/images/homeimages/Rectangle6.png'
 import feature1 from "../assets/icons/Upload & Organize 1.png"
 import feature2 from "../assets/icons/Edit & Convert 1.png"
 import feature3 from "../assets/icons/Collaborate Securely 1.png"
 import feature4 from "../assets/icons/Ensure Compliance 1.png"
 import feature5 from "../assets/icons/Integrate Seamlessly 1.png"
-import rectangle6 from '../assets/images/homeimages/Rectangle6.png'
-import ConnectwithUs from '../components/ConnectwithUs';
+import customer1 from "../assets/images/homeimages/customer1.png"
+import customer2 from "../assets/images/homeimages/customer2.png"
+import customer3 from "../assets/images/homeimages/customer3.png"
 
 
 function Home() {
@@ -36,7 +39,7 @@ function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className='bg-[#0E1836] flex flex-col md:flex-row h-[590px] md:h-[619px] px-8 md:px-30 py-8 md:py-18 mt-[80px] md:mt-[110px] '>
+      <div className='bg-[#0E1836] flex flex-col md:flex-row h-[590px] md:h-[625px] px-8 md:px-30 py-8 md:py-18 mt-[80px] md:mt-[105px] '>
         <div className='text-[#FFFFFF] '>
           <p className='text-[34px] md:text-[65px] md:leading-20 '>AI-Powered Document Management Platform</p>
           <p className='text-[12px] md:text-[19px] my-4 md:my-9 mr-1 md:mr-60 md:leading-9 '>DocShift is a powerful suite of tools designed to streamline your workflow and boost your productivity. From AI-powered writing assistance to advanced plagiarism detection.</p>
@@ -60,12 +63,12 @@ function Home() {
           <WhyDocShift logo={circle5} title='AI-Powered Efficiency' content='Leverage ChatGPT-powered tools for report generation, content rewriting, and summarization, saving hours of manual work.' />
         </div>
 
-        <div className='flex flex-wrap md:gap-x-41 gap-y-8 md:gap-y-20 '>
-          <HomeTools image={rectangle1} subtitle='Fragmented Tools' title='Fragmented Tools' content='Instead of juggling iLovePDF for conversions, Grammarly for editing, and Dropbox for storage, DocShift centralizes everything.' />
-          <HomeTools image={rectangle2} subtitle='Data Privacy Risks' title='Data Privacy Risks' content='Public tools often compromise security. DocShift’s encrypted storage and secure sharing links protect sensitive data.' className='md:flex-row-reverse'/>
-          <HomeTools image={rectangle3} subtitle='Time-Intensive Tasks' title='Time-Intensive Tasks' content='Manual report writing and formatting are time-consuming. DocShift’s AI tools automate these processes, boosting productivity.' />
-          <HomeTools image={rectangle4} subtitle='Compliance Challenges' title='Compliance Challenges' content='Meet regulatory requirements with built-in ISO, HIPAA, and GDPR compliance features.' className='md:flex-row-reverse'/>
-          <HomeTools image={rectangle5} subtitle='Collaboration Barriers' title='Collaboration Barriers' content='Role-based sharing and real-time collaboration ensure teams work seamlessly, even across geographies.' />
+        <div className='flex flex-wrap md:gap-x-41 gap-y-5 md:gap-y-20 justify-center '>
+          <HomeTools image={rectangle1} subtitle='Fragmented Tools' title='Fragmented Tools' content='Instead of juggling iLovePDF for conversions, Grammarly for editing, and Dropbox for storage, DocShift centralizes everything.' className='text-center md:text-left items-center' img='w-80 h-full' />
+          <HomeTools image={rectangle2} subtitle='Data Privacy Risks' title='Data Privacy Risks' content='Public tools often compromise security. DocShift’s encrypted storage and secure sharing links protect sensitive data.' className='md:flex-row-reverse text-center md:text-left items-center'  img='w-80 h-full'/>
+          <HomeTools image={rectangle3} subtitle='Time-Intensive Tasks' title='Time-Intensive Tasks' content='Manual report writing and formatting are time-consuming. DocShift’s AI tools automate these processes, boosting productivity.' className='text-center md:text-left items-center'  img='w-80 h-full'/>
+          <HomeTools image={rectangle4} subtitle='Compliance Challenges' title='Compliance Challenges' content='Meet regulatory requirements with built-in ISO, HIPAA, and GDPR compliance features.' className='md:flex-row-reverse text-center md:text-left items-center'  img='w-80 h-full'/>
+          <HomeTools image={rectangle5} subtitle='Collaboration Barriers' title='Collaboration Barriers' content='Role-based sharing and real-time collaboration ensure teams work seamlessly, even across geographies.' className='text-center md:text-left items-center'  img='w-80 h-full' />
         </div>
       </div>
 
@@ -85,7 +88,7 @@ function Home() {
 
       {/* Who uses Docshift */}
       <div className='flex ' >
-        <div className='bg-[#0D1632] h-[360px] md:h-[1020px] w-[350px] md:w-[700px] ml-4 md:ml-30 pl-3 md:pl-13 pt-6 md:pt-22 '>
+        <div className='bg-[#0D1632] h-[350px] md:h-[1020px] w-[350px] md:w-[700px] ml-4 md:ml-30 pl-3 md:pl-13 pt-6 md:pt-22 '>
           <p className='text-[#FD6B70] text-[6px] md:text-[15px] '>Who Uses DocShift ?</p>
           <p className='text-[#EEAC5F] text-[12px] md:text-[48px] md:pt-2 pb-1 md:pb-3 '>Who Uses DocShift ?</p>
           <p className='text-[#C0C0C0] text-[9px] md:text-[19px] '>DocShift serves a diverse range of<br />industries.</p>
@@ -107,33 +110,33 @@ function Home() {
             <p className='text-[#0E1836] text-[18px] md:text-[40px] pb-1 md:pb-8 ' >Get Started with DocShift</p>
             <p className='text-[8px] md:text-[20px] '>Ready to simplify your document workflows? Explore DocShift’s features, request a demo, or start with a free trial today.</p>
           </div>
-          <div className='relative'>
-            <img src={image2} className='absolute w-[120px] md:w-[740px] md:h-[480px] -top-13 md:-top-65 left-9 md:left-25 ' />
-            <img src={rectangle6} className='absolute rounded-md md:rounded-xl border border-white w-[65px] md:w-[300px] h-[42px] md:h-[200px] md:top-25 left-5 md:left-20  '/>
+          <div className='relative '>
+            <img src={homeImage2} className='absolute w-[160px] md:w-[740px] md:h-[480px] -top-13 md:-top-65 left-6 md:left-25 ' />
+            <img src={rectangle6} className='absolute rounded-md md:rounded-xl border border-white w-[65px] md:w-[300px] h-[42px] md:h-[200px] top-6 md:top-25 left-5 md:left-20  '/>
           </div>
-          <div className='bg-[#0D1632] h-[16px] md:h-[45px] w-full '></div>
+          <div className='bg-[#0D1632] h-[20px] md:h-[45px] w-full '></div>
         </div>
       </div>
 
       {/* Customer Testimonials */}
-      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-10 md:py-15 '>
+      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-10 md:py-15 h-[600px] '>
         <p className='text-[25px] md:text-[50px] '>Customer Testimonials</p>
         <p className='text-[9px] md:text-[14px] md:mt-1 mb-18 md:mb-25 '>DocShift: Smart Document Management Made Simple.</p>
         <div className='flex flex-col md:flex-row gap-12 md:gap-20  '>
           <Testimonials 
-            profile={image}
+            profile={customer1}
             content='“As a startup, we needed affordable tools without compromising quality. DocShift’s AI writing and PDF tools are a game-changer.”'
             name='Rajesh Kumar'
             about='Founder, TechTrend Innovations'
           />
           <Testimonials 
-            profile={image}
+            profile={customer2}
             content='“DocShift transformed our legal practice. We now manage contracts, NDAs, and client documents in one secure platform, saving hours each week.”'
             name='Priya Sharma'
             about='Partner, Sharma & Associates'
           />
           <Testimonials 
-            profile={image}
+            profile={customer3}
             content='“The plagiarism checker and secure storage make DocShift perfect for our university’s academic workflows.”'
             name='Dr. Anita Desai'
             about='Dean, City University'

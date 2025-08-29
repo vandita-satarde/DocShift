@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 function StoragePlan({color='', subtext, name, description, showButton=true }) {
     return (
@@ -8,7 +10,7 @@ function StoragePlan({color='', subtext, name, description, showButton=true }) {
                 <p className='text-[18px] md:text-[48px] '>{name}</p>
                 <p className='text-[8px] md:text-[13px] md:py-6 leading-3 md:leading-7 '>{description}</p>
                 {showButton && (
-                    <button className='text-center rounded-4xl w-20 md:w-42 h-6 md:h-11 bg-[#FD6B70] text-white text-[10px] md:text-[21px] '>Pricing</button>
+                    <Link to='/pricing' ><button className='text-center rounded-4xl w-20 md:w-42 h-6 md:h-11 bg-[#FD6B70] text-white text-[10px] md:text-[21px] '>Pricing</button></Link>
                 )}
             </div>
         </>

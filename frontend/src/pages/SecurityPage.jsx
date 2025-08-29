@@ -120,17 +120,20 @@ function SecurityPage() {
                 name='Permission Groups'
                 subtext='Control Access with Granular Permissions'
                 image={permission1}
+                imgTag=' object-cover md:h-[550px]'
             />
             <Permission 
                 bgColor='bg-[#F5F9FE]'
                 name='Data Retention Rules'
                 subtext='Automate Compliance with Retention Policies'
                 image={permission2}
+                imgTag='h-[160px] md:h-[570px]'
             />
             <Permission 
                 name='Secure Sharing Links'
                 subtext='Share Documents with Confidence'
                 image={permission3}
+                imgTag='md:h-[550px] object-cover'
             />
 
             <Footer/>

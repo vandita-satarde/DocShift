@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/images/image.jpg'
+import image from '../assets/images/connectwus.png'
 import { Link } from 'react-router-dom'
 
 function ConnectwithUs() {

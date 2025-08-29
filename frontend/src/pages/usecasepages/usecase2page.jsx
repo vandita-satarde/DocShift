@@ -17,7 +17,7 @@ function usecase2page() {
                 features='Key Benefits'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30 -space-y-2 md:space-y-0'>
                 <Subfeature textColor='text-[#0E1836]' name='PDF Editing Tools' description='Merge, split, or annotate contracts, add watermarks, or reorder pages for professional outputs. Convert contracts to Word for clause editing.' />
                 <Subfeature textColor='text-[#0E1836]' name='Secure Sharing' description='Share case files with clients or colleagues via expiring, password-protected links, ensuring confidentiality.' />
                 <Subfeature textColor='text-[#0E1836]' name='AI Clause Extraction' description='Use AI to identify and extract key clauses from lengthy contracts, reducing manual review time.' />

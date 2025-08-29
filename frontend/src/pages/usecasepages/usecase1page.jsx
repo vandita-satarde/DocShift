@@ -17,7 +17,7 @@ function usecase1page() {
                 features='Key Benefits'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30 -space-y-2 md:space-y-0 '>
                 <Subfeature textColor='text-[#0E1836]' name='Secure Storage' description='Store sensitive client data in AES-256 encrypted folders, ensuring confidentiality and compliance with financial regulations.' />
                 <Subfeature textColor='text-[#0E1836]' name='Document Conversion' description='Convert tax forms, financial statements, and reports between PDF, Word, Excel, or JPG formats with one click. Merge or split PDFs for audit-ready submissions.' />
                 <Subfeature textColor='text-[#0E1836]' name='AI-Powered Reports' description=' Use ChatGPT-powered tools to generate financial summaries, compliance reports, or client communications, saving hours of manual drafting.' />

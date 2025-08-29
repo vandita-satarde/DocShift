@@ -9,7 +9,6 @@ import IntegrationPage from './pages/IntegrationPage'
 import PricingPage from './pages/PricingPage'
 import SupportPage from './pages/SupportPage'
 
-
 import ToolsDetails from './components/featurespage/ToolsDetails'
 import Feature1page from './pages/featurespage/feature1'
 import Feature2page from './pages/featurespage/feature2'
@@ -39,12 +38,14 @@ import Integration2page from './pages/integrationpages/integration2page'
 import Integration3page from './pages/integrationpages/integration3page'
 import Integration4page from './pages/integrationpages/integration4page'
 import Integration5page from './pages/integrationpages/integration5page'
+import ScrollToTop from './components/ScrollToTop'
 
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <div className='font-[roboto] '>
         <Routes>
           <Route path="/" element={<Home />} />
