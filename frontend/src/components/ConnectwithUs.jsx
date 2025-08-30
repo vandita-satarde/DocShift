@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function ConnectwithUs() {
   return (
     <>
-      <div className='flex flex-col md:flex-row items-center gap-6 px-8 md:px-30 pb-10 md:pb-0 md:py-26 text-[#FFFFFF] bg-[#18233F]'>
+      <div className='flex flex-col md:flex-row items-center gap-6 px-8 md:px-30 py-10 md:py-15 text-[#FFFFFF] bg-[#18233F]'>
         <div className='space-y-2 md:space-y-6 '>
           <p className='text-[30px] md:text-[49px] '>Connect with Us</p>
           <p className='text-[11px] md:text-[20px] md:leading-9 '>DocShift is a powerful designed to streamline your workflow and boost your productivity.</p>

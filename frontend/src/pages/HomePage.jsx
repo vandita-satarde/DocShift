@@ -69,16 +69,16 @@ function Home() {
 
   return (
     <>
-      <Navbar />
+      <Navbar bgColor='bg-[#0E1836] ' />
 
       {/* Hero Section */}
-      <div className='bg-[#0E1836] flex flex-col md:flex-row h-[590px] md:h-[625px] px-8 md:px-30 py-8 md:py-18 mt-[66px] md:mt-[90px] '>
+      <div className='bg-[#0E1836] flex flex-col md:flex-row px-8 md:px-30 py-12 md:py-34 mt-[66px] md:mt-[80px] '>
         <div className='text-[#FFFFFF] '>
-          <p className='text-[34px] md:text-[65px] md:leading-20 '>AI-Powered Document Management Platform</p>
+          <p className='text-[34px] md:text-[65px] leading-11 md:leading-20 '>AI-Powered Document Management Platform</p>
           <p className='text-[12px] md:text-[19px] my-4 md:my-9 mr-1 md:mr-60 md:leading-9 '>DocShift is a powerful suite of tools designed to streamline your workflow and boost your productivity. From AI-powered writing assistance to advanced plagiarism detection.</p>
           <button className='w-[100px] md:w-[150px] h-[30px] md:h-[45px] bg-[#FD6B70] rounded-sm text-[13px] md:text-[18px] '>Get Started</button>
         </div>
-        <img src={homeImage} alt="Hero" className='w-[180px] md:w-[500px]  md:h-[370px] mt-10 mx-auto  md:mt-5 ' />
+        <img src={homeImage} alt="Hero" className='w-[180px] md:w-[500px] md:h-[370px] mt-12 md:mt-5 mx-auto ' />
       </div>
 
       {/* Why DocShift Stands Out */}
@@ -106,9 +106,9 @@ function Home() {
       </div>
 
       {/* How DocShift Works */}
-      <div className='bg-[#0D1632] text-[#FFFFFF] text-center px-8 md:px-22 py-10 md:py-30'>
-        <p className='text-[30px] md:text-[50px] '>How DocShift Works</p>
-        <p className='text-[10px] md:text-[15px] pt-2 pb-14'>DocShift’s workflow is designed for simplicity and power:</p>
+      <div className='bg-[#0D1632] text-[#FFFFFF] text-center px-8 md:px-22 py-10 md:py-16'>
+        <p className='text-[30px] md:text-[47px] md:-mb-3 '>How DocShift Works</p>
+        <p className='text-[10px] md:text-[15px] pt-2 pb-5 md:pb-7'>DocShift’s workflow is designed for simplicity and power:</p>
 
         <div className='flex flex-wrap justify-center md:gap-7'>
           <HowDocShift logo={feature1} title='Upload & Organize' content='Securely upload files to encrypted folders using drag-and-drop. Organize with AI-driven smart tagging for quick retrieval.' />
@@ -120,15 +120,15 @@ function Home() {
       </div>
 
       {/* Who uses Docshift */}
-      <div className='flex ' >
-        <div className='bg-[#0D1632] h-[330px] md:h-[1020px] w-[350px] md:w-[700px] ml-4 md:ml-30 pl-3 md:pl-13 pt-6 md:pt-22 '>
-          <p className='text-[#FD6B70] text-[6px] md:text-[15px] '>Who Uses DocShift ?</p>
-          <p className='text-[#EEAC5F] text-[12px] md:text-[48px] md:pt-2 pb-1 md:pb-3 '>Who Uses DocShift ?</p>
-          <p className='text-[#C0C0C0] text-[9px] md:text-[19px] '>DocShift serves a diverse range of<br />industries.</p>
-          <div className='text-[#C0C0C0] text-[10px] md:text-[21px] pt-7 md:pt-20 space-y-3 md:space-y-13 '>
-            <p>Get Started</p>
+      <div className='flex h-[330px] md:h-[650px]' >
+        <div className='bg-[#0D1632] w-[350px] md:w-[550px] ml-4 md:ml-30 px-3 md:px-6 pt-6 md:pt-6 '>
+          <p className='text-[#FD6B70] text-[6px] md:text-[12px] '>Who Uses DocShift ?</p>
+          <p className='text-[#EEAC5F] text-[12px] md:text-[42px] mt-1 '>Who Uses DocShift ?</p>
+          <p className='text-[#C0C0C0] text-[9px] md:text-[18px] '>DocShift serves a diverse range of<br />industries.</p>
+          <div className='text-[#C0C0C0] text-[10px] md:text-[18px] pt-7 md:pt-10 space-y-3 md:space-y-11 '>
+            {/* <p>Get Started</p> */}
             <div className='flex items-center gap-2 md:gap-5 '>
-              <img src={logo2} className='w-[20px] md:w-[42px] h-[20px] md:h-[45px] ' /><p>Get Started</p>
+              <img src={logo2} className='w-[20px] md:w-[33px] h-[20px] md:h-[35px] ' /><p>Get Started</p>
             </div>
             <p>Free Trial</p>
             <p>Free Trial</p>
@@ -139,20 +139,20 @@ function Home() {
         </div>
 
         <div className='flex flex-col justify-between'>
-          <div className='px-5 md:px-20 pt-7 md:pt-30'>
-            <p className='text-[#0E1836] text-[18px] md:text-[40px] pb-1 md:pb-8 ' >Get Started with DocShift</p>
+          <div className='px-5 md:px-16 pt-7 md:pt-15'>
+            <p className='text-[#0E1836] text-[18px] md:text-[40px] pb-1 md:pb-2 ' >Get Started with DocShift</p>
             <p className='text-[8px] md:text-[20px] '>Ready to simplify your document workflows? Explore DocShift’s features, request a demo, or start with a free trial today.</p>
           </div>
           <div className='relative '>
-            <img src={homeImage2} className='absolute w-[160px] md:w-[740px] md:h-[480px] -top-13 md:-top-65 left-6 md:left-25 ' />
-            <img src={rectangle6} className='absolute rounded-md md:rounded-xl border border-white w-[65px] md:w-[300px] h-[42px] md:h-[200px] top-6 md:top-25 left-5 md:left-20  ' />
+            <img src={homeImage2} className='absolute w-[160px] md:w-[550px] h-auto -top-13 md:-top-55 left-6 md:left-50 ' />
+            <img src={rectangle6} className='absolute rounded-md md:rounded-xl border border-white w-[65px] md:w-[200px] h-auto top-6 md:top-10 left-5 md:left-40  ' />
           </div>
-          <div className='bg-[#0D1632] h-[20px] md:h-[45px] w-full '></div>
+          <div className='bg-[#0D1632] h-[20px] md:h-[25px] w-full '></div>
         </div>
       </div>
 
       {/* Customer Testimonials */}
-      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-12 md:py-30 md:h-[700px] '>
+      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-12 md:py-15 md:h-[600px] '>
         <p className='text-[28px] md:text-[50px] '>Customer Testimonials</p>
         <p className='text-[10px] md:text-[14px] md:mt-1 md:mb-25 '>DocShift: Smart Document Management Made Simple.</p>
 

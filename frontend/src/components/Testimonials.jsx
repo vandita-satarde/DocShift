@@ -13,7 +13,7 @@ function Testimonials({profile, content, name, about}) {
             <p className=' md:h-[120px] md:group-hover:h-[170px] text-[10px] md:text-[13px] md:leading-5 md:group-hover:leading-7 my-4 md:my-6 ' >{content}</p>
             <div className='flex justify-between '>
               <div>
-                <ul className='list-disc ml-2 md:ml-7 text-[9px] md:text-[12px] font-[800] '>
+                <ul className='list-disc ml-2 md:ml-3 text-[9px] md:text-[12px] font-[800] '>
                   <li>{name}</li>
                 </ul>
                 <p className='text-[#505050] text-[7px] md:text-[8px] '>{about}</p>

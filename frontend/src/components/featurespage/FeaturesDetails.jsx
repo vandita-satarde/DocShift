@@ -1,11 +1,11 @@
 import React from 'react'
 
 import image from '../../assets/images/image.jpg'
-import pdf from '../../assets/images/feturespage/pdf.png'
-import word from '../../assets/images/feturespage/word.png'
-import excel from '../../assets/images/feturespage/excel.png'
-import ppt from '../../assets/images/feturespage/ppt.png'
-import jpg from '../../assets/images/feturespage/jpg.png'
+import pdf from '../../assets/images/featurespage/pdf.png'
+import word from '../../assets/images/featurespage/word.png'
+import excel from '../../assets/images/featurespage/excel.png'
+import ppt from '../../assets/images/featurespage/ppt.png'
+import jpg from '../../assets/images/featurespage/jpg.png'
 
 
 function FeaturesDetails({name , description}) {
