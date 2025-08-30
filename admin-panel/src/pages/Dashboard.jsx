@@ -3,12 +3,12 @@ import Sidebar from '../components/Sidebar'
 
 function Dashboard() {
   return (
-    <div>
-
-    {/* text-[#0E1836] bg-[#F5F9FE] */}
-    <Sidebar />
-    <p className='ml-70 '>Welcome Admin</p>
-    </div>
+    <>
+      <Sidebar />
+      <div className='pl-5 md:pl-85 pt-24 md:pt-8 bg-[#F5F9FE] min-h-screen p-8 md:p-16'>
+        <p className='text-[25px] md:text-[38px] font-bold mb-4 md:mb-8 '>Welcome Admin</p>
+      </div>
+    </>
   )
 }
 

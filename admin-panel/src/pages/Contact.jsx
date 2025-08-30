@@ -58,26 +58,26 @@ function AdminPanel() {
     return (
         <>
             <Sidebar />
-            <div className="ml-70 bg-[#F5F9FE] min-h-screen p-8 md:p-16">
-                <h2 className=" text-[#0f2769] text-[25px] md:text-[40px] font-bold mb-8">
+            <div className="pl-5 md:pl-85 pt-24 md:pt-8 bg-[#F5F9FE] min-h-screen p-6 md:p-16">
+                <h2 className=" text-[#0f2769] text-[25px] md:text-[30px] font-bold mb-3 md:mb-8">
                     Contact Submissions
                 </h2>
 
-                <div className="bg-[#F5F9FE] rounded-2xl shadow-md overflow-hidden">
+                <div className="bg-[#F5F9FE] rounded-2xl shadow-md overflow-x-auto">
                     <table className="min-w-full text-[13px] md:text-[16px]">
                         <thead className="bg-[#091432] text-white">
                             <tr>
-                                <th className="px-6 py-3 text-left">Full Name</th>
-                                <th className="px-6 py-3 text-left">Email</th>
-                                <th className="px-6 py-3 text-left">Message</th>
-                                <th className="px-6 py-3 text-center">Action</th>
+                                <th className="px-4 md:px-6 py-1 md:py-3 text-left">Full Name</th>
+                                <th className="px-4 md:px-6 py-1 md:py-3 text-left">Email</th>
+                                <th className="px-4 md:px-6 py-1 md:py-3 text-left">Message</th>
+                                <th className="px-4 md:px-6 py-1 md:py-3 text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             {contacts.length > 0 ? (
                                 contacts.map((contact) => (
                                     <tr key={contact._id} className="hover:bg-gray-100">
-                                        <td className="px-6 py-4">
+                                        <td className="px-2 md:px-6 md:py-3">
                                             {editingContact === contact._id ? (
                                                 <input
                                                     type="text"
@@ -91,7 +91,7 @@ function AdminPanel() {
                                                 contact.fullName
                                             )}
                                         </td>
-                                        <td className="px-6 py-4">
+                                        <td className="px-2 md:px-6  md:py-4">
                                             {editingContact === contact._id ? (
                                                 <input
                                                     type="email"
@@ -105,7 +105,7 @@ function AdminPanel() {
                                                 contact.email
                                             )}
                                         </td>
-                                        <td className="px-6 py-4">
+                                        <td className="px-2 md:px-6 py-1 md:py-4">
                                             {editingContact === contact._id ? (
                                                 <textarea
                                                     value={editData.message}
@@ -118,18 +118,18 @@ function AdminPanel() {
                                                 contact.message
                                             )}
                                         </td>
-                                        <td className="px-6 py-4 text-center">
+                                        <td className="px-2 md:px-6 py-1 md:py-4 flex justify-center">
                                             {editingContact === contact._id ? (
                                                 <>
                                                     <button
                                                         onClick={() => handleSaveEdit(contact._id)}
-                                                        className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded m-1"
+                                                        className="bg-green-500 hover:bg-green-600 text-white px-2 md:px-3 py-0.5 md:py-1 rounded m-1"
                                                     >
                                                         Save
                                                     </button>
                                                     <button
                                                         onClick={() => setEditingContact(null)}
-                                                        className="bg-gray-500 hover:bg-gray-600 text-white px-3 py-1 rounded"
+                                                        className="bg-gray-500 hover:bg-gray-600 text-white px-2 md:px-3 py-0.5 md:py-1 rounded m-1"
                                                     >
                                                         Cancel
                                                     </button>
@@ -138,13 +138,13 @@ function AdminPanel() {
                                                 <>
                                                     <button
                                                         onClick={() => handleEditClick(contact)}
-                                                        className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded m-1"
+                                                        className="bg-blue-500 hover:bg-blue-600 text-white px-2 md:px-3 py-0.5 md:py-1 rounded m-1"
                                                     >
                                                         Edit
                                                     </button>
                                                     <button
                                                         onClick={() => handleDelete(contact._id)}
-                                                        className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded"
+                                                        className="bg-red-500 hover:bg-red-600 text-white px-2 md:px-3 py-0.5 md:py-1 rounded m-1"
                                                     >
                                                         Delete
                                                     </button>

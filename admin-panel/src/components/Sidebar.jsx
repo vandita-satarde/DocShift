@@ -1,17 +1,42 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { Menu, X } from 'lucide-react'; // icon for menu toggle
+
 
 function Sidebar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  }
+
+  const handleLogout = () => {
+    navigate("/")
+  }
+
   return (
     <>
+
+      {/* Mobile Toggle Button */}
+      <div className='md:hidden fixed z-10 flex justify-between items-center w-full p-6 bg-[#0E1836] text-[#F5F9FE] '>
+        <h1 className='text-[18px] font-bold '>Admin Panel</h1>
+        <button onClick={toggleSidebar} >
+          {isOpen ? <X size={24} /> : <Menu size={25} />}
+        </button>
+      </div>
+
       {/* Sidebar */}
-        <div className='fixed bg-[#0E1836] text-[#F5F9FE] p-5 w-[300px] min-h-screen '>
-            <p className='text-[25px] '>Admin Panel</p>
-            <div className='py-10 px-5 space-y-4'>
-                <p>Dashboard</p>
-                <p><Link to='/contact' >Contact Submission</Link></p>
-            </div>
+      <div className={`text-[15px] md:text-[16px] fixed z-5 bg-[#0E1836] text-[#F5F9FE] p-6 md:p-8 w-[230px] md:w-[300px] min-h-screen ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 flex flex-col justify-between  `}>
+        <div>
+          <p className='text-[25px] hidden md:block'>Admin Panel</p>
+          <div className='py-18 md:py-9 px-2 md:px-4 space-y-2 md:space-y-3 '>
+            <p><Link to='/dashboard'>Dashboard</Link></p>
+            <p><Link to='/contact' >Contact Submission</Link></p>
+          </div>
         </div>
+        <button onClick={handleLogout} className='text-[#0E1836] bg-[#F5F9FE] w-full h-7 md:h-9 rounded-xs cursor-pointer '>Log Out</button>
+      </div>
     </>
   )
 }
