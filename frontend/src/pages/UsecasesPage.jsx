@@ -13,7 +13,7 @@ function UsecasesPage() {
   return (
     <>
         <Navbar />
-        <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[68px] md:mt-[90px] '>
+        <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-26 md:py-35 lg:py-41 '>
 
             {/* herosection */}
             <p className='text-[26px] md:text-[80px] font-semibold leading-9 md:leading-23 tracking-wider '>Discover DocShift’s<br/> Industry Use Cases</p>

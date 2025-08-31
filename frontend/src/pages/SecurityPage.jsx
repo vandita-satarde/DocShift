@@ -25,8 +25,8 @@ function SecurityPage() {
             <Navbar />
 
             {/* herosection */}
-            <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[68px] md:mt-[90px] '>
-                <p className='text-[26px] md:text-[80px] font-semibold leading-8 md:leading-23 tracking-wider '> Enterprise-Grade<br/> Security and Compliance</p>
+            <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-26 md:py-35 lg:py-41 '>
+                <p className='text-[26px] md:text-[80px] font-semibold leading-8 md:leading-20 lg:leading-23 tracking-wider '> Enterprise-Grade<br/> Security and Compliance</p>
                 <p className='text-[12px] md:text-[22px] py-4 md:py-13 md:leading-11'>DocShift is more than a document management system (DMS)—it’s a comprehensive<br className='hidden md:block'/> ecosystem designed to address modern document challenges.</p>
                 <button className='cursor-pointer w-[100px] md:w-[240px] h-[30px] md:h-[65px] bg-[#FD6B70] text-white text-[13px] md:text-[24px] rounded-sm '>Get Started</button>
                 <div className='flex text-left mt-12 md:mt-15 px-2 gap-12 md:gap-40 text-[8px] md:text-[17px] text-[#000000CC]  md:leading-9 tracking-wider md:tracking-widest'>
