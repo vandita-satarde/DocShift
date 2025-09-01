@@ -2,7 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Navbar from '../components/Navbar'
-import Compliance from '../components/securitycomponents/compliance'
+import Compliance from '<div styleName={} />
+<components />
+<securitycomponents />
+<C></C>ompliance'
 import Permission from '../components/securitycomponents/permission'
 import Footer from '../components/Footer'
 
