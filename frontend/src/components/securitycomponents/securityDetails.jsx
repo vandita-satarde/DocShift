@@ -3,7 +3,7 @@ import React from 'react'
 function securityDetails({ name, subcontent, content, showButton=true , features }) {
     return (
         <>
-            <div className='bg-[#0E1836] text-white text-center px-3 md:px-75 py-14 md:py-24 mt-[65px] md:mt-[109px] tracking-wider space-y-3 md:space-y-13 '>
+            <div className='bg-[#0E1836] text-white text-center px-10 md:px-75 pb-15 md:pb-25 pt-32 md:pt-55 tracking-wider space-y-3 md:space-y-13 '>
                 <p className='text-[26px] md:text-[82px] font-semibold leading-7 md:leading-24 tracking-widest '>{name}</p>
                 <p className='text-[10px] md:text-[24px] px-2 md:px-0 leading-3 md:leading-10'>{subcontent}</p>
                 <p className='text-[10px] md:text-[19px] px-2 md:px-0 leading-3 md:leading-9 '>{content}</p>
@@ -13,7 +13,7 @@ function securityDetails({ name, subcontent, content, showButton=true , features
                 )}
             </div>
 
-            <div className='bg-[#F5F9FE] text-[#0E1836] pt-4 md:pt-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] text-[#0E1836] pt-6 md:pt-15 px-10 md:px-30'>
                 <p className='text-[20px] md:text-[58px] font-bold text-center '>{features}</p>
             </div>
         </>

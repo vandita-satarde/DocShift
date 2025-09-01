@@ -91,7 +91,7 @@ function Feature() {
             </div>
 
             {/* DocShift: Revolutionizing Revolutionize */}
-            <div className='px-4 md:px-0 flex flex-col md:flex-row md:tracking-widest items-center md:items-start md:justify-around py-10 md:py-15 lg:py-28 bg-[#0E1836] text-white '>
+            <div className='px-4 md:px-0 flex flex-col md:flex-row md:tracking-widest items-center md:items-start md:justify-around py-10 md:py-15 bg-[#0E1836] text-white '>
                 <div className='text-center md:text-left'>
                     <p className='text-[25px] md:text-[38px] lg:text-[58px] leading-8 md:leading-12 lg:leading-19 tracking-widest font-semibold '>DocShift :<br className='hidden md:block' /> Revolutionizing<br />Revolutionize</p>
                     <p className='text-[10px] md:text-[13px] lg:text-[18px] my-2 md:my-5 md:leading-4 lg:leading-9 '>DocShift is a powerful suite of tools designed <br className='block lg:hidden ' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='block lg:hidden ' /> productivity. From Al-powered writing<br className='hidden lg:block' /> assistance <br className='block lg:hidden ' /> to advanced plagiarism detection.</p>
@@ -104,16 +104,16 @@ function Feature() {
                     <p className='text-[8px] md:text-[15px] lg:text-[18px] '>Storage for</p>
                 </div>
                 <div className=' pb-60 md:pb-0'>
-                    <div className='flex gap-4 md:gap-6 lg:gap-10 md:ml-0 '>
-                        <div className='w-[50px] md:w-[80px] lg:w-[130px] h-[50px] md:h-[80px] lg:h-[130px] bg-white rounded-full flex justify-center items-center '>
-                            <img src={shield} className='h-8 md:h-14 lg:h-23' />
+                    <div className='flex gap-4 md:gap-6 md:ml-0 '>
+                        <div className='w-[50px] md:w-[80px] lg:w-[120px] h-[50px] md:h-[80px] lg:h-[120px] bg-white rounded-full flex justify-center items-center '>
+                            <img src={shield} className='h-8 md:h-14 lg:h-20' />
                         </div>
                         <div className='flex flex-col justify-end lg:gap-3 pb-2 md:pb-5'>
                             <p className='text-[8px] md:text-[15px] lg:text-[17px] '>Secure</p>
                             <p className='text-[8px] md:text-[16px] lg:text-[18px] '>Storage for Files</p>
                         </div>
                     </div>
-                    <div className='relative mt-5 md:mt-10 flex justify-center'>
+                    <div className='relative mt-5 md:mt-6 flex justify-center'>
                         <img src={rectangle1} className='absolute md:-left-10 h-auto w-[180px] md:w-[280px] lg:w-[420px] max-w-none ' />
                         <div className='absolute top-6 md:top-10 left-33 md:left-50 lg:left-83 rounded-md bg-[#2E77F5] w-[45px] md:w-[70px] lg:w-[100px] h-[35px] md:h-[50px] lg:h-[70px] '>
                         </div>

@@ -12,16 +12,14 @@ function feature9page() {
       <FeaturesDetails
         name='Image & Visual Tools'
         description='Enhance visuals with DocShift’s image processing tools'
+        featuresTitle='Benefits include'
       />
 
-      <div className='bg-[#0E1836] text-white py-5 md:py-15 px-10 md:px-30'>
-        <p className='text-[20px] md:text-[58px] font-bold text-center '>Benefits include</p>
-        <div>
-          <Subfeature name='Background Removal' description='Use Remove.bg API to remove image backgrounds.' />
-          <Subfeature name='OCR Extraction' description='Convert images to editable text with Tesseract.js.' />
-          <Subfeature name='Format Conversion' description=' Turn images into PDFs or resize/crop for documents.' />
-          <Subfeature name='Auto-Enhancement' description='Adjust brightness, contrast, or resolution.' />
-        </div>
+      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+        <Subfeature name='Background Removal' description='Use Remove.bg API to remove image backgrounds.' />
+        <Subfeature name='OCR Extraction' description='Convert images to editable text with Tesseract.js.' />
+        <Subfeature name='Format Conversion' description=' Turn images into PDFs or resize/crop for documents.' />
+        <Subfeature name='Auto-Enhancement' description='Adjust brightness, contrast, or resolution.' />
       </div>
 
       <StoragePlan subtext='Learn About' name='Integrations' description='Perfect for designers and content creators needing professional visuals.' />

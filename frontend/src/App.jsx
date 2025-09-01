@@ -54,7 +54,6 @@ function App() {
           <Route path='/security' element={<SecurityPage/>} />
           <Route path='/integrations' element={<IntegrationPage/>} />
           <Route path='/pricing' element={<PricingPage/>} />
-
           <Route path='/support' element={<SupportPage/>} />
 
           <Route path='/toolsdetails' element={<ToolsDetails />} />
