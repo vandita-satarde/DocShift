@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import checkbox from '../assets/images/Checkbox.png'
 
 
-function Pricingcomponent({ name, num, text }) {
-    const [selected, setSelected] = useState(false);
+function Pricingcomponent({ name, num, text, selected, onSelect }) {
 
     return (
         <>
@@ -11,7 +10,7 @@ function Pricingcomponent({ name, num, text }) {
                 className={`flex justify-between items-center border border-gray-300 rounded-2xl md:rounded-3xl px-3 md:px-8 py-2 md:py-6 
                     ${selected ? "bg-gradient-to-b from-[#183aa1] to-[#0E1836] shadow-md text-white" : "bg-white text-black"}
                 `}
-                onClick={() => setSelected(!selected)}
+                onClick={onSelect}
             >
 
                 <div className='flex items-center gap-3 md:gap-5'>
@@ -27,7 +26,8 @@ function Pricingcomponent({ name, num, text }) {
                         <p className='font-semibold text-[10px] md:text-[19px] '>{name}</p>
                         {num && (
                             <p
-                                className={`md:py-1 px-1 md:px-3 text-[8px] md:text-[11.5px] rounded-sm md:rounded-2xl ${selected
+                                className={`md:py-1 px-1 md:px-3 text-[8px] md:text-[11.5px] rounded-sm md:rounded-2xl 
+                                    ${selected
                                         ? "bg-[#F1F0FB] text-[#4A3AFF]"
                                         : "bg-[#F1F0FB] text-black"
                                     }`}

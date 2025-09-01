@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 
 function PricingPage() {
     const [billingCycle, setBillingCycle] = useState("monthly");
+    const [selectedIndex, setSelectedIndex] = useState(0);
 
     // Pricing data
     const plans = [
@@ -14,26 +15,54 @@ function PricingPage() {
             monthly: "390 rs/month",
             yearly: "3900 rs/year",
             num: "10",
+            features: [
+                "Everything in Basic",
+                "Access to standard templates & UI blocks",
+            ],
         },
         {
             name: "Standard",
             monthly: "490 rs/month",
             yearly: "4900 rs/year",
             num: "20",
+            features: [
+                "Everything in Basic",
+                "Access to standard templates & UI blocks",
+                "Collaboration tools",
+                "CMS collections",
+            ],
         },
         {
             name: "Premium",
             monthly: "790 rs/month",
             yearly: "7900 rs/year",
             num: "35",
+            features: [
+                "Everything in Basic",
+                "Access to standard templates & UI blocks",
+                "Collaboration tools",
+                "CMS collections",
+                "Basic analytics",
+                "Standard integrations",
+            ],
         },
         {
             name: "Enterprise",
             monthly: "Contact us",
             yearly: "Contact us",
             num: "50",
+            features: [
+                "Everything in Basic",
+                "Access to standard templates & UI blocks",
+                "Collaboration tools",
+                "CMS collections",
+                "Basic analytics",
+                "Standard integrations",
+                "Priority email support",
+            ],
         },
     ];
+
 
     return (
         <>
@@ -47,8 +76,8 @@ function PricingPage() {
                         <button
                             onClick={() => setBillingCycle("monthly")}
                             className={`py-0.5 md:py-1 px-2 md:px-4 rounded-md transition ${billingCycle === "monthly"
-                                    ? "bg-white shadow font-semibold"
-                                    : "opacity-60"
+                                ? "bg-white shadow font-semibold"
+                                : "opacity-60"
                                 }`}
                         >
                             Monthly
@@ -56,8 +85,8 @@ function PricingPage() {
                         <button
                             onClick={() => setBillingCycle("yearly")}
                             className={`py-0.5 md:py-1 px-2 md:px-4 rounded-md transition ${billingCycle === "yearly"
-                                    ? "bg-white shadow font-semibold"
-                                    : "opacity-60"
+                                ? "bg-white shadow font-semibold"
+                                : "opacity-60"
                                 }`}
                         >
                             Yearly
@@ -76,6 +105,8 @@ function PricingPage() {
                                         text={
                                             billingCycle === "monthly" ? plan.monthly : plan.yearly
                                         }
+                                        selected={selectedIndex === i}
+                                        onSelect={() => setSelectedIndex(i)}
                                     />
                                 ))}
                             </div>
@@ -94,19 +125,26 @@ function PricingPage() {
                                         "Basic analytics",
                                         "Standard integrations",
                                         "Priority email support",
-                                    ].map((feature, i) => (
-                                        <div
-                                            key={i}
-                                            className="flex justify-between items-center"
-                                        >
-                                            <p>{feature}</p>
-                                            <img
-                                                src={checkcircle}
-                                                className="w-3 md:w-5 h-3 md:h-5"
-                                                alt="check"
-                                            />
-                                        </div>
-                                    ))}
+                                    ].map((feature, i) => {
+                                        const included = plans[selectedIndex].features.includes(feature)
+                                        return (
+                                            <div
+                                                key={i}
+                                                className="flex justify-between items-center"
+                                            >
+                                                <p>{feature}</p>
+                                                {included ? (
+                                                    <img
+                                                        src={checkcircle}
+                                                        className="w-3 md:w-5 h-3 md:h-5"
+                                                        alt="check"
+                                                    />
+                                                ) : (
+                                                    <div className="w-3 md:w-5 h-3 md:h-5 border border-gray-400 rounded-full"></div>
+                                                )}
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </div>
@@ -114,7 +152,7 @@ function PricingPage() {
                         {/* Bottom CTA */}
                         <div className="flex justify-between items-center">
                             <button className="bg-[#0E1836] text-white text-[9px] md:text-[16px] py-1 md:py-2 px-2 md:px-4 rounded-lg md:rounded-xl bg-gradient-to-b from-[#183aa1] to-[#0E1836] shadow-md">
-                                Choose Plan
+                                Choose {plans[selectedIndex].name} Plan
                             </button>
                             <div className="flex items-center space-x-1 md:space-x-2">
                                 <p className="text-[10px] md:text-[17px] ">
