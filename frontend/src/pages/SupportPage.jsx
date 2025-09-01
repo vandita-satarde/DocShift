@@ -8,9 +8,9 @@ function SupportPage() {
     return (
         <>
             <Navbar />
-            <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-3 md:px-30 py-14 md:py-18 mt-[80px] md:mt-[90px] '>
-                <p className='text-[26px] md:text-[75px] font-semibold leading-8 md:leading-23 tracking-wider '> Support – DocShift: Your<br className='hidden md:block'  /> Success, Our Priority</p>
-                <p className='text-[12px] md:text-[24px] py-4 md:py-13 md:leading-11'>DocShift’s 24/7 support ensures you get the most out of our platform. Whether you’re<br className='hidden md:block' /> troubleshooting uploads, setting up folder sharing, or recovering files, our team is here to help.<br className='hidden md:block'  /> Below is an accordion-style breakdown of common support topics.</p>
+            <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-13 md:px-24 lg:px-30 pb-8 md:pb-18 pt-30 md:pt-40 lg:pt-70 '>
+                <p className='text-[26px] md:text-[50px] lg:text-[75px] font-semibold leading-8 md:leading-15 lg:leading-23 tracking-wider '> Support – DocShift: Your<br className='hidden lg:block'  /> Success, Our Priority</p>
+                <p className='text-[12px] md:text-[23px] lg:text-[24px] py-2 md:py-5 lg:py-13 leading-4 md:leading-8 lg:leading-11'>DocShift’s 24/7 support ensures you get the most out of our platform. Whether you’re<br className='hidden lg:block' /> troubleshooting uploads, setting up folder sharing, or recovering files, our team is here to help.<br className='hidden lg:block'  /> Below is an accordion-style breakdown of common support topics.</p>
             </div>
 
             {/* upload reports */}
@@ -52,7 +52,7 @@ function SupportPage() {
                 subtext2='Learn more about our Data Retention Rules'
             />
 
-            <ConnectwithUs />
+            <ConnectwithUs className='pt-5 md:pt-8'/>
             <Footer />
         </>
     )

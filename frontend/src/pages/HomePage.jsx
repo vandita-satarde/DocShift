@@ -28,9 +28,9 @@ import feature2 from "../assets/icons/Edit & Convert 1.png"
 import feature3 from "../assets/icons/Collaborate Securely 1.png"
 import feature4 from "../assets/icons/Ensure Compliance 1.png"
 import feature5 from "../assets/icons/Integrate Seamlessly 1.png"
-import customer1 from "../assets/images/homeimages/customer1.png"
-import customer2 from "../assets/images/homeimages/customer2.png"
-import customer3 from "../assets/images/homeimages/customer3.png"
+import customer1 from "../assets/images/homeimages/Customer1.png"
+import customer2 from "../assets/images/homeimages/Customer2.png"
+import customer3 from "../assets/images/homeimages/Customer3.png"
 
 
 const testimonialsData = [
