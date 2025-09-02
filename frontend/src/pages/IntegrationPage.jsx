@@ -19,28 +19,28 @@ function IntegrationPage() {
             <Navbar />
 
             {/* hero section */}
-            <div className='bg-[#0D1632] flex pt-[68px] lg:pt-[84px] lg:h-[730px] '>
+            <div className='bg-[#0D1632] flex pt-17 lg:pt-[84px] h-[260px] lg:h-[730px] '>
                 <div className=' bg-[#F5F9FE] w-1/2'>
-                    <div className='pl-13 pt-19.5 h-full bg-[#0D1632] rounded-br-xl md:rounded-br-4xl '>
-                        <img src={salesman} className='w-50 md:w-130' />
+                    <div className='pl-4 md:pl-13 pt-9.5 lg:pt-19.5 h-full bg-[#0D1632] rounded-br-xl md:rounded-br-4xl '>
+                        <img src={salesman} className='w-35 md:w-130' />
                     </div>
                 </div>
                 <div className=' bg-[#0D1632] w-1/2'>
-                    <div className='p-2 md:p-12 h-full text-[#0E1836] bg-[#F5F9FE] py-3 md:py-26 rounded-tl-xl md:rounded-tl-4xl '>
-                        <p className='text-[14px] md:text-[82px] leading-4 md:leading-23 font-semibold tracking-widest '>DocShift:<br />Revolutionizing</p>
+                    <div className='p-3 md:p-12 h-full text-[#0E1836] bg-[#F5F9FE] py-5 md:py-26 rounded-tl-xl md:rounded-tl-4xl '>
+                        <p className='text-[18px] md:text-[82px] leading-5 md:leading-23 font-semibold tracking-widest '>DocShift:<br />Revolutionizing</p>
                         <p className='text-[8px] md:text-[19px] my-2 md:my-9 leading-2.5 md:leading-9 md:tracking-wider'>DocShift is a powerful suite of tools designed to streamline your<br /> workflow and boost your productivity. From Al-powered writing<br /> assistance to advanced plagiarism detection.</p>
                         <a href='#integration'>
-                            <button className='w-[110px] md:w-[290px] h-[23px] md:h-[65px] bg-[#FD6B70] text-[#FFFFFF] rounded-sm text-[9px] md:text-[23px] mt-2 md:mt-9 cursor-pointer'>Explore Your Integration</button>
+                            <button className='w-[120px] md:w-[290px] h-[23px] md:h-[65px] bg-[#FD6B70] text-[#FFFFFF] rounded-sm text-[9px] md:text-[23px] mt-2 md:mt-9 cursor-pointer'>Explore Your Integration</button>
                         </a>
                     </div>
                 </div>
             </div>
 
             {/* integrations */}
-            <div id='integration' className=' bg-[#F5F9FE] text-center pt-18 md:pt-36'>
-                <p className='text-[20px] md:text-[48px]  md:mb-1 '>Industry Use Cases</p>
+            <div id='integration' className=' bg-[#F5F9FE] text-center pt-13 md:pt-36'>
+                <p className='text-[20px] md:text-[48px] md:mb-1 '>Industry Use Cases</p>
                 <p className='text-[9px] md:text-[15px] tracking-wide w-[240px] md:w-[560px] mx-auto'>DocShift integrates with popular tools and platforms to fit seamlessly into your existing workflows.</p>
-                <div className=' mx-7 md:mx-30 py-6 md:py- flex flex-col space-y-2 md:space-y-10 '>
+                <div className=' mx-7 md:mx-30 py-6 md:py- flex flex-col space-y-3 md:space-y-10 '>
                     <Link to='/integration1page'>
                         <UseCases
                             maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl ' image={integration1} img='rounded-none ' name='Google Drive' subcontent='Sync Documents with Google Drive' showbutton={false}

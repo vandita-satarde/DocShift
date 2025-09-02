@@ -94,7 +94,7 @@ function Feature() {
             <div className=' flex flex-col md:flex-row md:tracking-widest items-center md:items-start md:justify-around gap-10 py-10 md:py-15 bg-[#0E1836] text-white '>
                 <div className='text-center md:text-left'>
                     <p className='text-[25px] md:text-[38px] lg:text-[58px] leading-8 md:leading-12 lg:leading-19 tracking-widest font-semibold '>DocShift :<br /> Revolutionizing<br />Revolutionize</p>
-                    <p className='text-[10px] md:text-[13px] lg:text-[18px] my-2 md:my-5 md:leading-4 lg:leading-9 '>DocShift is a powerful suite of tools designed <br className='block lg:hidden ' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='block lg:hidden ' /> productivity. From Al-powered writing<br className='hidden lg:block' /> assistance <br className='block lg:hidden ' /> to advanced plagiarism detection.</p>
+                    <p className='text-[10px] md:text-[13px] lg:text-[18px] my-2 md:my-5 md:leading-4 lg:leading-9 '>DocShift is a powerful suite of tools designed <br className='md:block lg:hidden ' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='block lg:hidden ' /> productivity. From Al-powered writing<br className='hidden lg:block' /> assistance <br className='block lg:hidden ' /> to advanced plagiarism detection.</p>
                     <div className='space-x-4 md:space-x-6 lg:space-x-12 md:mt-10 mb-4 md:mb-20 text-[10px] md:text-[14px] lg:text-[17px] '>
                         <button className='w-[70px] md:w-[130px] lg:w-[150px] h-[30px] md:h-[36px] lg:h-[46px] bg-[#FD6B70] rounded-sm '>Get Started</button>
                         <button className='w-[70px] md:w-[130px] lg:w-[150px] h-[30px] md:h-[36px] lg:h-[46px] bg-[#0E215D] rounded-sm '>Learn More</button>
@@ -115,7 +115,7 @@ function Feature() {
                     </div>
                     <div className='relative mt-5 md:mt-6 flex justify-center'>
                         <img src={rectangle1} className='absolute md:-left-10 h-auto w-[180px] md:w-[280px] lg:w-[420px] max-w-none ' />
-                        <div className='absolute top-6 md:top-10 left-33 md:left-50 lg:left-83 rounded-md bg-[#2E77F5] w-[45px] md:w-[70px] lg:w-[100px] h-[35px] md:h-[50px] lg:h-[70px] '>
+                        <div className='absolute top-6 md:top-10 left-33 md:left-50 lg:left-83 rounded-sm md:rounded-md bg-[#2E77F5] w-[40px] md:w-[70px] lg:w-[100px] h-[27px] md:h-[50px] lg:h-[70px] '>
                         </div>
                         <img src={rectangle2} className='absolute top-20 md:top-30 lg:top-38 md:-left-25 lg:-left-42 rounded h-auto w-[210px] md:w-[350px] lg:w-[520px] max-w-none ' />
                     </div>
@@ -125,7 +125,7 @@ function Feature() {
 
             {/* Explore Our Features */}
             <div className='bg-[#F5F9FE]'>
-                <p className='text-[26px] md:text-[36px] lg:text-[48px] text-[#0E1836] text-center pt-11 md:pt-15 lg:pt-30'>Explore Our Features</p>
+                <p className='text-[22px] md:text-[36px] lg:text-[48px] text-[#0E1836] text-center pt-11 md:pt-15 lg:pt-30'>Explore Our Features</p>
                 <div className='flex flex-wrap justify-center md:justify-start gap-x-6 md:gap-x-5 lg:gap-x-10 gap-y-9 md:gap-y-10 lg:gap-y-14 py-4 md:py-8 lg:py-12 md:px-6 lg:px-25'>
                     <Link to='/feature1page' ><Features name='File Upload & Storage' /></Link>
                     <Link to='/feature2page'><Features name='Smart Tagging' /></Link>

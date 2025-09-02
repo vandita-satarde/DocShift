@@ -15,7 +15,7 @@ function feature1() {
                 featuresTitle='Key Features'
             />
 
-            <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+            <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-8 md:px-30'>
                     <Subfeature name='Unlimited Uploads' description=' Based on your plan, upload files without restrictions.' />
                     <Subfeature name='Drag-and-Drop Interface' description=' Organize files effortlessly in a user-friendly dashboard.' />
                     <Subfeature name='Cross-Device Access' description=' Access files from desktops, tablets, or mobiles with real-time syncing.' />

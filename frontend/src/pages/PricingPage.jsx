@@ -68,8 +68,8 @@ function PricingPage() {
         <>
             <Navbar />
 
-            <div className="bg-[#F5F9FE] px-4 md:px-30 py-30 md:py-42">
-                <div className="bg-white text-[#0E1836] flex flex-col items-center shadow-2xl rounded-[20px] md:rounded-[40px] py-8 md:py-20 space-y-8 ">
+            <div className="bg-[#F5F9FE] px-4 md:px-30 pt-26 md:pt-42 pb-10 md:pb-20">
+                <div className="bg-white text-[#0E1836] flex flex-col items-center shadow-2xl rounded-[20px] md:rounded-[40px] py-6 md:py-20 space-y-3 md:space-y-8 ">
 
                     {/* Toggle */}
                     <div className="bg-gray-200 inline-block p-1 md:p-1.5 rounded-md md:rounded-lg text-[8px] md:text-[15px]">

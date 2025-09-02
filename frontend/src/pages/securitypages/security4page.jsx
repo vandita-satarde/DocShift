@@ -25,7 +25,7 @@ function security4page() {
             </div>
 
             <StoragePlan
-                color='px-8 md:px-[460px] bg-[#0E1836] text-white '
+                color='px-8 bg-[#0E1836] text-white '
                 subtext='See Restore' name='Deleted Files'
                 description='This feature reduces manual oversight and ensures compliance.'
                 showButton={false}
