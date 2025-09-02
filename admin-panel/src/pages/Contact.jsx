@@ -11,7 +11,7 @@ function AdminPanel() {
     // Fetch contacts
     const fetchContacts = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/api/contacts");
+            const res = await axios.get("https://doc-shift-backend.vercel.app/api/contacts");
             setContacts(res.data);
         } catch (error) {
             console.error("Error fetching contacts", error);
@@ -26,7 +26,7 @@ function AdminPanel() {
     const handleDelete = async (id) => {
         if (window.confirm("Are you sure you want to delete this message?")) {
             try {
-                await axios.delete(`http://localhost:5000/api/contacts/${id}`);
+                await axios.delete(`https://doc-shift-backend.vercel.app/api/contacts/${id}`);
                 fetchContacts();
             } catch (error) {
                 console.error("Error deleting contact", error);
@@ -47,7 +47,7 @@ function AdminPanel() {
     // Save edited contact
     const handleSaveEdit = async (id) => {
         try {
-            await axios.put(`http://localhost:5000/api/contacts/${id}`, editData);
+            await axios.put(`https://doc-shift-backend.vercel.app/api/contacts/${id}`, editData);
             setEditingContact(null);
             fetchContacts();
         } catch (error) {

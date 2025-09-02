@@ -40,7 +40,7 @@ function ContactUs() {
         }
 
             try {
-                const res = await axios.post("http://localhost:5000/api/contacts", formData)
+                const res = await axios.post("https://doc-shift-backend.vercel.app/api/contacts", formData)
                 alert(res.data.message);
                 setFormData({ fullName: "", email: "", message: "" })
             } catch (err) {
