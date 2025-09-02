@@ -69,7 +69,7 @@ function Home() {
 
   return (
     <>
-      <Navbar bgColor='bg-[#0E1836] ' />
+      <Navbar />
 
       {/* Hero Section */}
       <div className='bg-[#0E1836] flex flex-col md:flex-row px-8 md:px-12 lg:px-30 pt-26 md:pt-30 lg:pt-45 pb-15 lg:pb-35 '>
@@ -84,7 +84,7 @@ function Home() {
       {/* Why DocShift Stands Out */}
       <div className='bg-[#F5F9FE] px-8 md:px-20 lg:px-30 pb-15 md:pb-30'>
         <div className='text-[#0E1836] text-center py-10 md:py-13 lg:py-16'>
-          <p className='text-[28px] md:text-[40px] lg:text-[48px] '>Why DocShift Stands Out</p>
+          <p className='text-[28px] md:text-[35px] lg:text-[48px] '>Why DocShift Stands Out</p>
           <p className='text-[11px] md:text-[14px] lg:text-[15px] leading-4.5 lg:leading-5 '>DocShift is more than a document management system (DMS)<br/>—it’s a comprehensive ecosystem designed to<br/> address modern document challenges.</p>
         </div>
 
@@ -107,7 +107,7 @@ function Home() {
 
       {/* How DocShift Works */}
       <div className='bg-[#0D1632] text-[#FFFFFF] text-center px-8 lg:px-22 py-10 md:py-16'>
-        <p className='text-[25px] md:text-[38px] lg:text-[47px] md:-mb-3 '>How DocShift Works</p>
+        <p className='text-[25px] md:text-[36px] lg:text-[47px] md:-mb-3 '>How DocShift Works</p>
         <p className='text-[10px] md:text-[15px] md:pt-2 pb-5 md:pb-7'>DocShift’s workflow is designed for simplicity and power:</p>
 
         <div className='flex flex-wrap justify-center md:gap-4 lg:gap-7'>
@@ -120,17 +120,16 @@ function Home() {
       </div>
 
       {/* Who uses Docshift */}
-      <div className='flex h-[310px] md:h-[580px] lg:h-[650px]' >
-        <div className='bg-[#0D1632] w-[280px] lg:w-[550px] ml-4 md:ml-10 lg:ml-30 px-3 md:px-6 pt-3 md:pt-6 '>
+      <div className='flex h-[280px] md:h-[540px] lg:h-[650px]' >
+        <div className='bg-[#0D1632] w-[280px] md:w-[550px] ml-4 md:ml-10 lg:ml-30 px-3 md:px-6 pt-3 md:pt-7 lg:pt-6 '>
           <p className='text-[#FD6B70] text-[6px] md:text-[12px] '>Who Uses DocShift ?</p>
-          <p className='text-[#EEAC5F] text-[12px] md:text-[30px] lg:text-[42px] mt-1 '>Who Uses DocShift ?</p>
+          <p className='text-[#EEAC5F] text-[12px] md:text-[28px] lg:text-[42px] md:mb-4 lg:mb-0 mt-1 '>Who Uses DocShift ?</p>
           <p className='text-[#C0C0C0] text-[8px] md:text-[13px] lg:text-[18px] '>DocShift serves a diverse range of<br />industries.</p>
-          <div className='text-[#C0C0C0] text-[10px] md:text-[18px] pt-7 md:pt-10 space-y-4 md:space-y-8 lg:space-y-11 '>
+          <div className='text-[#C0C0C0] text-[10px] md:text-[18px] pt-6 md:pt-10 space-y-4 md:space-y-9 lg:space-y-11 '>
             {/* <p>Get Started</p> */}
             <div className='flex items-center gap-2 md:gap-5 '>
               <img src={logo2} className='w-[20px] md:w-[25px] lg:w-[33px] h-[20px] md:h-[25px] lg:h-[35px] ' /><p>Get Started</p>
             </div>
-            <p>Free Trial</p>
             <p>Free Trial</p>
             <p>14 - Days Trial</p>
             <p>No Credit Card Required</p>
@@ -140,19 +139,19 @@ function Home() {
 
         <div className='flex flex-col justify-between'>
           <div className='px-5 md:px-8 lg:px-16 pt-7 md:pt-10 lg:pt-15'>
-            <p className='text-[#0E1836] text-[18px] md:text-[30px] lg:text-[40px] pb-1 lg:pb-2 ' >Get Started with DocShift</p>
-            <p className='text-[8px] md:text-[13px] lg:text-[20px] '>Ready to simplify your document workflows? Explore DocShift’s features, request a demo, or start with a free trial today.</p>
+            <p className='text-[#0E1836] text-[18px] md:text-[26px] lg:text-[40px] pb-1 lg:pb-2 ' >Get Started with DocShift</p>
+            <p className='text-[8px] md:text-[14px] lg:text-[20px] '>Ready to simplify your document workflows? Explore DocShift’s features, request a demo, or start with a free trial today.</p>
           </div>
           <div className='relative '>
-            <img src={homeImage2} className='absolute w-[160px] md:w-[350px] lg:w-[550px] h-auto -top-13 md:-top-35 lg:-top-55 left-8 md:left-18 lg:left-50 ' />
-            <img src={rectangle6} className='absolute rounded-md md:rounded-xl border border-white w-[65px] md:w-[140px] lg:w-[200px] h-auto top-6 md:top-8 lg:top-10 left-5 md:left-13 lg:left-40  ' />
+            <img src={homeImage2} className='absolute w-[160px] md:w-[350px] lg:w-[550px] h-auto -top-13 md:-top-30 lg:-top-55 left-8 md:left-12 lg:left-50 ' />
+            <img src={rectangle6} className='hidden md:block absolute rounded-md md:rounded-xl border border-white w-[65px] md:w-[140px] lg:w-[200px] h-auto top-6 md:top-8 lg:top-10 left-5 md:left-13 lg:left-40  ' />
           </div>
           <div className='bg-[#0D1632] h-[15px] lg:h-[25px] w-full '></div>
         </div>
       </div>
 
       {/* Customer Testimonials */}
-      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-8 md:py-15 h-[370px] md:h-[540px] lg:h-[600px] '>
+      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-8 md:py-8 lg:py-18 h-[370px] md:h-[400px] lg:h-[600px] '>
         <p className='text-[22px] md:text-[40px] lg:text-[50px] '>Customer Testimonials</p>
         <p className='text-[10px] md:text-[14px] md:mt-1 md:mb-25 '>DocShift: Smart Document Management Made Simple.</p>
 
@@ -181,7 +180,7 @@ function Home() {
         </div>
 
         {/*with Carousel*/}
-        <div className="lg:hidden relative w-full flex justify-center items-center h-[250px] md:h-[180px]">
+        <div className="lg:hidden relative w-full flex justify-center items-center h-[250px] md:h-[110px]">
           {testimonialsData.map((item, index) => {
             // check position relative to activeIndex
             let position = "opacity-0 scale-75 translate-x-0"; // hidden by default
@@ -215,7 +214,6 @@ function Home() {
       </div>
 
       <ConnectwithUs />
-
       <Footer />
     </>
   )

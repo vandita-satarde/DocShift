@@ -15,7 +15,7 @@ function feature4page() {
         featuresTitle='Key Features'
       />
 
-      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-22 lg:px-30'>
         <Subfeature name='Custom Expiry Periods' description='Set expiration for days, weeks, or months.' />
         <Subfeature name='Auto-Archive/Delete' description='Automatically archive or delete expired files based on retention rules.' />
         <Subfeature name='Notifications' description=' Get email or dashboard alerts before expiration.' />

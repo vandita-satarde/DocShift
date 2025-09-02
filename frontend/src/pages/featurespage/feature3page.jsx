@@ -15,7 +15,7 @@ function feature3page() {
         featuresTitle='Feature include'
       />
 
-      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-22 lg:px-30'>
         <Subfeature name='Timestamped History' description='View a complete log of edits with timestamps and user details.' />
         <Subfeature name='Conflict Detection' description='Prevent overwrite issues during collaborative editing.' />
         <Subfeature name='One-Click Revert' description='Restore older versions instantly.' />

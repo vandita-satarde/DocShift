@@ -15,7 +15,7 @@ function feature8page() {
         featuresTitle='Features include'
       />
 
-      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-22 lg:px-30'>
         <Subfeature name='Source Detection' description=' Identify original sources with detailed reports.' />
         <Subfeature name='AI Rewriting Suggestions' description=' Rewrite flagged content to maintain originality.' />
         <Subfeature name='Exportable Reports' description=' Share plagiarism reports for academic or legal use.' />

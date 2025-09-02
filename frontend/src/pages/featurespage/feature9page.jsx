@@ -15,7 +15,7 @@ function feature9page() {
         featuresTitle='Benefits include'
       />
 
-      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-22 lg:px-30'>
         <Subfeature name='Background Removal' description='Use Remove.bg API to remove image backgrounds.' />
         <Subfeature name='OCR Extraction' description='Convert images to editable text with Tesseract.js.' />
         <Subfeature name='Format Conversion' description=' Turn images into PDFs or resize/crop for documents.' />

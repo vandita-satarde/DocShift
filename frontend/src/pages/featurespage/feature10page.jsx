@@ -15,7 +15,7 @@ function feature10page() {
         featuresTitle='Benefits include'
       />
 
-      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-22 lg:px-30'>
         <Subfeature name='Pre-Designed Templates' description='CVs, resumes, invoices, NDAs, MoUs, and more.' />
         <Subfeature name='Drag-and-Drop Editor' description='Customize layouts without coding.' />
         <Subfeature name='AI Assistance' description=' Auto-fill missing sections with ChatGPT-powered suggestions.' />

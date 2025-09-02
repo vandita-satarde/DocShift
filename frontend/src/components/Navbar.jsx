@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../assets/icons/DocShift-logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-function Navbar({bgColor='bg-[#3d4762] '}) {
+function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
@@ -13,7 +13,7 @@ function Navbar({bgColor='bg-[#3d4762] '}) {
 
     return (
         <>
-            <div className={`${bgColor} fixed top-0 left-0 w-full z-50 font-[400] text-white flex flex-col md:flex-row md:items-center justify-between px-6 lg:px-[120px] py-5 `}>
+            <div className={`bg-[#0E1836] fixed top-0 left-0 w-full z-50 font-[400] text-white flex flex-col md:flex-row md:items-center justify-between px-6 lg:px-[120px] py-5 `}>
                 {/* Logo and hamburger */}
                 <div className='flex justify-between items-center w-full md:w-auto'>
                     <NavLink to="/">

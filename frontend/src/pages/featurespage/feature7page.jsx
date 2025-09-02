@@ -15,7 +15,7 @@ function feature7page() {
         featuresTitle='Benefits include'
       />
 
-      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+      <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-22 lg:px-30'>
         <Subfeature name='Report Generation' description='Create professional reports from bullet points or prompts.' />
         <Subfeature name='Content Rewriting' description='Adjust tone (formal, academic, conversational) or rewrite for clarity.' />
         <Subfeature name='Smart Summarization' description=' Condense lengthy documents into concise summaries.' />

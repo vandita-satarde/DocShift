@@ -15,7 +15,7 @@ function feature2() {
                 featuresTitle='Benefits include'
             />
 
-            <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-30'>
+            <div className='bg-[#0E1836] text-white pb-5 md:pb-10 lg:pb-15 px-10 md:px-22 lg:px-30'>
                 <Subfeature name='AI-Suggested Tags' description=' Automatically categorize documents based on content analysis.' />
                 <Subfeature name='Custom Tags' description=' Add manual tags for specific needs.' />
                 <Subfeature name='Fast Search' description='Retrieve files in seconds using keyword or tag-based searches.' />
