@@ -31,11 +31,11 @@ function Footer({ className = 'z-10 relative' }) {
             </div>
             <div className=' md:space-y-1.5 lg:space-y-3'>
               <p className='text-white'>Contact Us</p>
-              <div className='flex items-center gap-2'>
-                <img src={contact} className='w-5 h-5 ' />
+              <div className='flex items-center gap-2 pl-1'>
+                <img src={contact} className='w-3 md:w-4 lg:w-5 md:h-4 lg:h-5 ' />
                 <p>9112117415</p>
               </div><div className='flex items-center gap-2'>
-                <img src={email} className='w-5 h-5' />
+                <img src={email} className='w-4 md:w-5 md:h-5' />
                 <p>info@docshift.com</p>
               </div>
             </div>
@@ -43,7 +43,7 @@ function Footer({ className = 'z-10 relative' }) {
         </div>
         <hr className='text-gray-700 mx-6 md:mx-14 lg:mx-20 ' />
         <a href='https://tars.co.in/' target='_blank'>
-          <p className='text-[8px] md:text-[13px] text-center p-3 md:p-6 '>© copyrighty 2025 Design and Developed with love by TARS TECHNOLOGIES</p>
+          <p className='text-[8px] md:text-[13px] text-center p-4 md:p-6 '>© copyrighty 2025 Design and Developed with love by TARS TECHNOLOGIES</p>
         </a>
       </div>
     </>

@@ -68,8 +68,8 @@ function PricingPage() {
         <>
             <Navbar />
 
-            <div className="bg-[#F5F9FE] px-4 md:px-30 pt-26 md:pt-42 pb-10 md:pb-20">
-                <div className="bg-white text-[#0E1836] flex flex-col items-center shadow-2xl rounded-[20px] md:rounded-[40px] py-6 md:py-20 space-y-3 md:space-y-8 ">
+            <div className="bg-[#F5F9FE] px-4 md:px-14 lg:px-30 pt-26 md:pt-36 lg:pt-42 pb-10 md:pb-20">
+                <div className="bg-white text-[#0E1836] flex flex-col items-center shadow-2xl rounded-[20px] md:rounded-[40px] py-6 md:py-12 lg:py-20 space-y-3 md:space-y-8 lg:space-y-10 ">
 
                     {/* Toggle */}
                     <div className="bg-gray-200 inline-block p-1 md:p-1.5 rounded-md md:rounded-lg text-[8px] md:text-[15px]">
@@ -94,9 +94,9 @@ function PricingPage() {
                     </div>
 
                     {/* Pricing Plans */}
-                    <div className="space-y-6 md:space-y-10 w-[250px] md:w-[1000px] ">
-                        <div className="flex flex-col md:flex-row gap-2 md:gap-7">
-                            <div className="md:w-4/7 space-y-3 md:space-y-5">
+                    <div className="space-y-6 md:space-y-9 lg:space-y-10 w-[250px] md:w-[600px] lg:w-[1000px] ">
+                        <div className="flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-7">
+                            <div className="md:w-4/7 space-y-3 md:space-y-3 lg:space-y-5">
                                 {plans.map((plan, i) => (
                                     <Pricingcomponent
                                         key={i}
@@ -112,11 +112,11 @@ function PricingPage() {
                             </div>
 
                             {/* Includes */}
-                            <div className="md:w-3/7 border border-gray-300 rounded-2xl md:rounded-4xl p-3 md:p-7 space-y-3 md:space-y-7 ">
+                            <div className="md:w-3/7 border border-gray-300 rounded-2xl md:rounded-4xl p-3 md:p-6 lg:p-7 space-y-3 md:space-y-4 lg:space-y-7 ">
                                 <p className="text-[10px] md:text-[18px] font-semibold ">
                                     Includes:
                                 </p>
-                                <div className="text-[#6F6C8F] text-[10px] md:text-[14px] space-y-2 md:space-y-6 ">
+                                <div className="text-[#6F6C8F] text-[10px] md:text-[14px] space-y-2 md:space-y-5 lg:space-y-6 ">
                                     {[
                                         "Everything in Basic",
                                         "Access to standard templates & UI blocks",
