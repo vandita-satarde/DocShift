@@ -17,14 +17,14 @@ function security1page() {
                 features='Key Features'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-20 lg:px-30'>
                 <Subfeature textColor='text-[#0E1836]' name='Real-Time Tracking' description='Log every action with timestamps and user details.' />
                 <Subfeature textColor='text-[#0E1836]' name='Exportable Reports' description='Generate audit reports for compliance reviews or audits.' />
                 <Subfeature textColor='text-[#0E1836]' name='Searchable Logs' description='Filter logs by user, date, or document for quick analysis.' />
                 <Subfeature textColor='text-[#0E1836]' name='Compliance Support' description='Align with ISO, HIPAA, and GDPR requirements for auditability.' />
             </div>
 
-            <StoragePlan color='px-8 md:px-8 md:px-[460px] bg-[#0E1836] text-white ' subtext='See Industry' name='Use Cases' description='This feature is essential for industries like healthcare and legal, where tracking access is mandatory.' showButton={false} />
+            <StoragePlan color='px-8 md:px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white ' subtext='See Industry' name='Use Cases' description='This feature is essential for industries like healthcare and legal, where tracking access is mandatory.' showButton={false} />
             <Footer/>
         </>
     )

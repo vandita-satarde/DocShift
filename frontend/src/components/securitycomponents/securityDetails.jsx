@@ -14,7 +14,7 @@ function securityDetails({ name, subcontent, content, showButton=true , features
                     </Link>
                 )}
             </div>
-            <p className='text-[20px] md:text-[58px] font-bold text-center bg-[#F5F9FE] text-[#0E1836] pt-6 md:pt-15  '>{features}</p>
+            <p className='text-[20px] md:text-[45px] lg:text-[58px] font-bold text-center bg-[#F5F9FE] text-[#0E1836] pt-6 md:pt-12 lg:pt-15  '>{features}</p>
             
         </>
     )

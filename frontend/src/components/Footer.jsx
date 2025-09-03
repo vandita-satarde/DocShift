@@ -4,11 +4,11 @@ import contact from '../assets/icons/contact.png'
 import email from '../assets/icons/email.png'
 import { Link } from 'react-router-dom'
 
-function Footer({ className = '' }) {
+function Footer({ className = 'z-10 relative' }) {
   return (
     <>
-      <div className='text-[#C0C0C0] bg-[#091432]'>
-        <div className={`${className} flex flex-col md:flex-row items-center gap-7 md:gap-14 lg:gap-40 px-10 md:px-16 lg:px-38 py-11 md:py-33 md:h-[260px] lg:h-[370px] text-[12px] md:text-[15px] lg:text-[19px]`}>
+      <div className={`${className} text-[#C0C0C0] bg-[#091432]`}>
+        <div className={` flex flex-col md:flex-row items-center gap-7 md:gap-14 lg:gap-40 px-10 md:px-16 lg:px-38 py-11 md:py-33 md:h-[260px] lg:h-[370px] text-[12px] md:text-[15px] lg:text-[19px]`}>
           <div className='text-center space-y-0 md:space-y-4 lg:space-y-11'>
             <img src={logo} className='w-[130px] md:w-[190px] lg:w-[240px] mx-auto ' />
             <p className='text-[9px] md:text-[13px]'>@2025 DocShift. Inc<br className='hidden md:block' /> All rights reserved.</p>
@@ -32,17 +32,19 @@ function Footer({ className = '' }) {
             <div className=' md:space-y-1.5 lg:space-y-3'>
               <p className='text-white'>Contact Us</p>
               <div className='flex items-center gap-2'>
-                <img src={email} className='w-5 h-5'/>
+                <img src={contact} className='w-5 h-5 ' />
                 <p>9112117415</p>
               </div><div className='flex items-center gap-2'>
-                <img src={email} className='w-5 h-5'/>
+                <img src={email} className='w-5 h-5' />
                 <p>info@docshift.com</p>
               </div>
             </div>
           </div>
         </div>
-        <hr className='text-gray-700 mx-6 md:mx-14 lg:mx-20 '/>
-        <p className='text-[8px] md:text-[13px] text-center p-3 md:p-6 '>© copyrighty 2025 Design and Developed with love by TARS TECHNOLOGIES</p>
+        <hr className='text-gray-700 mx-6 md:mx-14 lg:mx-20 ' />
+        <a href='https://tars.co.in/' target='_blank'>
+          <p className='text-[8px] md:text-[13px] text-center p-3 md:p-6 '>© copyrighty 2025 Design and Developed with love by TARS TECHNOLOGIES</p>
+        </a>
       </div>
     </>
   )

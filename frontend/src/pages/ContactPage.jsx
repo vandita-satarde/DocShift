@@ -53,9 +53,9 @@ function ContactUs() {
             <>
                 <Navbar />
                 <div className='relative flex flex-col sm:flex-row md:flex-row justify-between gap-y-14 p-8 md:p-30 mt-15 md:mt-3 bg-[#E4EBFF] text-[#0E1836] '>
-                    <img src={image2} className='absolute top-5 lg:-top-20 -right-25 lg:right-130 w-45 lg:w-100 ' />
-                    <img src={image2} className='absolute bottom-55 lg:-bottom-60 -left-35 lg:left-50 w-60 lg:w-145 ' />
-                    <div className='mt-5 md:mt-25 pl-6 z-10 '>
+                    <img src={image2} className='z-0 absolute top-5 lg:-top-20 -right-25 lg:right-130 w-45 lg:w-100 ' />
+                    <img src={image2} className='z-0 absolute bottom-55 lg:-bottom-60 -left-35 lg:left-50 w-60 lg:w-145 ' />
+                    <div className='mt-5 md:mt-25 pl-6  '>
                         <p className='text-[25px] md:text-[50px] '>Lets Get in <span className='font-[700] '>Touch!</span></p>
                         <p className='text-[#1A1A1A] text-[11px] md:text-[13px] md:leading-5 '>Have a question or need assistance? Reach<br /> out to us via email,
                             phone, or the contact form<br /> below. We're eager to assist you.</p>
@@ -92,7 +92,7 @@ function ContactUs() {
                         </div>
                     </div>
                 </div>
-                <Footer className='z-20 relative'/>
+                <Footer className=' relative'/>
             </>
         )
     }
