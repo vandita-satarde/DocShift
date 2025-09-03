@@ -30,7 +30,7 @@ function Navbar() {
                 <div className={`text-[15px] md:text-[16px] lg:text-[19px] flex-col md:flex-row flex md:items-center justify-between gap-4 md:gap-5 lg:gap-14 mt-4 md:mt-0 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
                     <div className='flex flex-col md:flex-row items-center md:items-start justify-center gap-3 md:gap-3 lg:gap-7'>
                         <NavLink to="/" className={({ isActive }) => `${baseClass} ${isActive ? activeClass : ""} `} >Home</NavLink>
-                        <NavLink to="/features" className={ ({isActive}) => `${baseClass} ${isActive ? activeClass : ""} ` } >Feature</NavLink>
+                        <NavLink to="/features" className={ ({isActive}) => `${baseClass} ${isActive ? activeClass : ""} ` } >Features</NavLink>
                         <NavLink to="/use-cases" className={ ({isActive}) => `${baseClass} ${isActive ? activeClass : ""} ` } >Use Cases</NavLink>
                         <NavLink to="/security" className={ ({isActive}) => `${baseClass} ${isActive ? activeClass : ""}` } >Security</NavLink>
                         <NavLink to="/integrations" className={ ({isActive}) => `${baseClass} ${isActive ? activeClass : ""}` } >Integrations</NavLink>
