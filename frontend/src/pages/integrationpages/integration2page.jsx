@@ -25,7 +25,7 @@ function integration2page() {
                 <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='New Version Syncing' description='Sync specific folders for organized workflows.' />
             </div>
 
-            <StoragePlan color='px-8 md:px-8 md:px-[460px] bg-[#0E1836] text-white ' subtext='Explore' name='Role-Based Sharing' description='Perfect for businesses using Dropbox for storage.' showButton={false} />
+            <StoragePlan color='px-8 md:px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white ' subtext='Explore' name='Role-Based Sharing' description='Perfect for businesses using Dropbox for storage.' showButton={false} />
             <Footer />
         </>
     )

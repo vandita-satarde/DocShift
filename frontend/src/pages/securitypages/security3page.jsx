@@ -17,7 +17,7 @@ function security3page() {
                 features='Features include'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-20 lg:px-30'>
                 <Subfeature textColor='text-[#0E1836]' name='ISO 27001' description='Adheres to information security management standards.' />
                 <Subfeature textColor='text-[#0E1836]' name='HIPAA Compliance' description='Protects patient data with encrypted storage and access logs.' />
                 <Subfeature textColor='text-[#0E1836]' name='GDPR Compliance' description='Supports data subject rights, including data deletion and portability.' />
@@ -25,7 +25,7 @@ function security3page() {
             </div>
 
             <StoragePlan
-                color='px-8 md:px-[460px] bg-[#0E1836] text-white '
+                color='px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white '
                 subtext='See Medical Records' name='Use Case'
                 description='This ensures trust for healthcare providers, legal firms, and corporates.'
                 showButton={false}

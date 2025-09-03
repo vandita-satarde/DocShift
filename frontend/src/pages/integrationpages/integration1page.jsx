@@ -25,7 +25,7 @@ function integration1page() {
                 <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Folder Mapping' description='Sync specific folders for organized workflows.' />
             </div>
 
-            <StoragePlan color='px-8 md:px-8 md:px-[460px] bg-[#0E1836] text-white ' subtext='See Secure' name='Storage' description='This integration is ideal for teams already using Google Workspace.' showButton={false} />
+            <StoragePlan color='px-8 md:px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white ' subtext='See Secure' name='Storage' description='This integration is ideal for teams already using Google Workspace.' showButton={false} />
             <Footer />
         </>
     )

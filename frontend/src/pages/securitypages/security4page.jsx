@@ -17,7 +17,7 @@ function security4page() {
                 features='Features include'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-20 lg:px-30'>
                 <Subfeature textColor='text-[#0E1836]' name='Custom Retention Periods' description='Adheres to information security management standards.' />
                 <Subfeature textColor='text-[#0E1836]' name='Auto-Archive/Delete' description='Protects patient data with encrypted storage and access logs.' />
                 <Subfeature textColor='text-[#0E1836]' name='Alerts' description='Supports data subject rights, including data deletion and portability.' />

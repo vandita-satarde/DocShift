@@ -25,7 +25,7 @@ function integration5page() {
         <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Secure Authentication' description='Use JWT or OAuth2 for secure API access.' />
       </div>
 
-      <StoragePlan color='px-8 md:px-8 md:px-[460px] bg-[#0E1836] text-white ' subtext='Contact Us for' name='API Access' description='This is perfect for organizations needing tailored solutions.' showButton={false} />
+      <StoragePlan color='px-8 md:px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white ' subtext='Contact Us for' name='API Access' description='This is perfect for organizations needing tailored solutions.' showButton={false} />
       <Footer />
     </>
   )

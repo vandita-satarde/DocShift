@@ -17,7 +17,7 @@ function security2page() {
                 features='Benefits include'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-20 lg:px-30'>
                 <Subfeature textColor='text-[#0E1836]' name='Custom Roles' description='Create specific roles tailored to your organization’s hierarchy.' />
                 <Subfeature textColor='text-[#0E1836]' name='Granular Controls' description='Set permissions at the folder or document level.' />
                 <Subfeature textColor='text-[#0E1836]' name='Real-Time Updates' description='Instantly update permissions for new or departing team members.' />
@@ -25,7 +25,7 @@ function security2page() {
             </div>
 
             <StoragePlan
-                color='px-8 md:px-[460px] bg-[#0E1836] text-white '
+                color='px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white '
                 subtext='Learn About' name='Role-Based Sharing'
                 description='Permission groups ensure secure collaboration for corporates and legal firms.'
                 showButton={false}

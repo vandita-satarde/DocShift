@@ -27,7 +27,7 @@ function integration3page() {
                 
             </div>
 
-            <StoragePlan color='px-8 md:px-8 md:px-[460px] bg-[#0E1836] text-white ' subtext='See' name='Smart Tagging' description='This simplifies document collection for CA firms and legal offices.' showButton={false} />
+            <StoragePlan color='px-8 md:px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white ' subtext='See' name='Smart Tagging' description='This simplifies document collection for CA firms and legal offices.' showButton={false} />
             <Footer />
         </>
     )

@@ -17,7 +17,7 @@ function security5page() {
                 features='Features include'
             />
 
-            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-30'>
+            <div className='bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-20 lg:px-30'>
                 <Subfeature textColor='text-[#0E1836]' name='Expiring Links' description='Set time limits (e.g., 24 hours, 7 days) for shared links.' />
                 <Subfeature textColor='text-[#0E1836]' name='Password Protection' description='Add passwords for additional security.' />
                 <Subfeature textColor='text-[#0E1836]' name='Access Tracking' description='Monitor who accessed shared links via audit logs.' />
@@ -25,7 +25,7 @@ function security5page() {
             </div>
 
             <StoragePlan
-                color='px-8 md:px-[460px] bg-[#0E1836] text-white '
+                color='px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white '
                 subtext='Explore' name='Role-Based Sharing'
                 description='This ensures secure collaboration with clients or external partners.'
                 showButton={false}

@@ -25,7 +25,7 @@ function integration4page() {
                 <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Scalable Workflows' description='Automate repetitive tasks for large teams.' />
             </div>
 
-            <StoragePlan color='px-8 md:px-8 md:px-[460px] bg-[#0E1836] text-white ' subtext='See Secure' name='Start Free Trial' description='Ideal for startups and corporates automating document processes.' showButton={false} />
+            <StoragePlan color='px-8 md:px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white ' subtext='See Secure' name='Start Free Trial' description='Ideal for startups and corporates automating document processes.' showButton={false} />
             <Footer />
         </>
     )

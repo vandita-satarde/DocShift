@@ -24,7 +24,7 @@ function security1page() {
                 <Subfeature textColor='text-[#0E1836]' name='Compliance Support' description='Align with ISO, HIPAA, and GDPR requirements for auditability.' />
             </div>
 
-            <StoragePlan color='px-8 md:px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white ' subtext='See Industry' name='Use Cases' description='This feature is essential for industries like healthcare and legal, where tracking access is mandatory.' showButton={false} />
+            <StoragePlan color='px-8 md:px-10 lg:px-[460px] bg-[#0E1836] text-white ' subtext='See Industry' name='Use Cases' description='This feature is essential for industries like healthcare and legal, where tracking access is mandatory.' showButton={false} />
             <Footer/>
         </>
     )
