@@ -18,7 +18,7 @@ function integration5page() {
         features='Features include'
       />
 
-      <div className='flex flex-wrap justify-center gap-x-16 md:gap-x-70 -gap-y-1 md:gap-y-10 bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-50'>
+      <div className='flex flex-wrap justify-center ggap-x-9 md:gap-x-18 lg:gap-x-70 -gap-y-1 md:gap-y-5 lg:gap-y-10 bg-[#F5F9FE] pb-5 md:pb-15 px-10 md:px-50'>
         <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='RESTful API' description='Access DocShift’s features (upload, edit, share) programmatically.' />
         <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Our Custom Workflows' description=' Integrate with ERP, CRM, or proprietary systems.' />
         <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Scalable Endpoints' description='Handle large-scale document processing for enterprises.' />

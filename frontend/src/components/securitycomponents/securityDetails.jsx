@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function securityDetails({ name, subcontent, content, showButton=true , features }) {
     return (
         <>
-            <div className='bg-[#0E1836] text-white text-center px-10 md:px-15 lg:px-75 pb-10 md:pb-25 pt-30 md:pt-40 lg:pt-55 tracking-wider space-y-3 md:space-y-3 lg:space-y-13 '>
+            <div className='bg-[#0E1836] text-white text-center px-10 md:px-15 lg:px-75 pb-10 md:pb-25 pt-30 md:pt-36 lg:pt-55 tracking-wider space-y-3 md:space-y-1 lg:space-y-13 '>
                 <p className='text-[26px] md:text-[45px] lg:text-[82px] font-semibold leading-7 md:leading-24 tracking-widest '>{name}</p>
                 <p className='text-[11px] md:text-[20px] kg:text-[24px] px-2 md:px-0 leading-3 md:leading-10'>{subcontent}</p>
                 <p className='text-[10px] md:text-[16px] lg:text-[19px] px-2 md:px-0 leading-3 md:leading-6 lg:leading-9 '>{content}</p>

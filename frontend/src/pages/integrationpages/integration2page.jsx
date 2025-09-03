@@ -18,7 +18,7 @@ function integration2page() {
                 features='Benefits include'
             />
 
-            <div className='flex flex-wrap justify-center gap-x-9 md:gap-x-70 -gap-y-1 md:gap-y-10 bg-[#F5F9FE] pb-5 md:pb-15 md:px-50'>
+            <div className='flex flex-wrap justify-center gap-x-9 md:gap-x-18 lg:gap-x-70 -gap-y-1 md:gap-y-5 lg:gap-y-10 bg-[#F5F9FE] pb-5 md:pb-15 md:px-50'>
                 <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Seamless File Transfer' description='Upload files to Google Drive or import them to DocShift.' />
                 <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Backup Redundancy' description='Use OAuth2 for secure authentication.' />
                 <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Team Collaboration' description='Changes in DocShift reflect instantly in Google Drive.' />
