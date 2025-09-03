@@ -6,6 +6,7 @@ import word from '../../assets/images/featurespage/word.png'
 import excel from '../../assets/images/featurespage/excel.png'
 import ppt from '../../assets/images/featurespage/ppt.png'
 import jpg from '../../assets/images/featurespage/jpg.png'
+import { Link } from 'react-router-dom'
 
 
 function FeaturesDetails({ name, description, featuresTitle }) {
@@ -21,7 +22,9 @@ function FeaturesDetails({ name, description, featuresTitle }) {
                     <div className='w-1/2 mt-6 md:mt-13'>
                         <p className='text-[20px] md:text-[40px] lg:text-[63px] leading-6 md:leading-13 lg:leading-18 font-semibold tracking-widest '>{name}</p>
                         <p className='text-[9px] md:text-[19px] my-3 md:my-8 leading-3 md:leading-7 lg:leading-9 md:tracking-wider'>{description}</p>
-                        <button className='w-[80px] md:w-[130px] lg:w-[150px] h-[24px] md:h-[43px] lg:h-[46px] bg-[#FD6B70] text-[#FFFFFF] rounded-sm text-[10px] md:text-[18px] '>Get Started</button>
+                        <Link to='/pricing'>
+                            <button className='cursor-pointer w-[80px] md:w-[130px] lg:w-[150px] h-[24px] md:h-[43px] lg:h-[46px] bg-[#FD6B70] text-[#FFFFFF] rounded-sm text-[10px] md:text-[18px] '>Get Started</button>
+                        </Link>
                     </div>
                 </div>
 

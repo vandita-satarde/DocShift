@@ -51,7 +51,9 @@ function Feature() {
                 <div className='text-[#0E1836] md:pl-8 lg:pl-35 py-5 md:py-20 px-5 md:px-0 text-center md:text-left '>
                     <p className='text-[28px] md:text-[41px] lg:text-[82px] leading-7 md:leading-13 lg:leading-23 font-semibold tracking-widest '>DocShift:<br />Revolutionizing</p>
                     <p className='text-[11px] md:text-[16px] lg:text-[19px] my-4 md:my-5 lg:my-9 leading-5 lg:leading-9 lg:tracking-wider'>DocShift is a powerful suite of tools designed <br className='hidden md:block lg:hidden' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='hidden md:block lg:hidden' />  productivity. From Al-powered writing<br className='hidden md:block' /> assistance to advanced plagiarism detection.</p>
-                    <button className='w-[100px] md:w-[130px] lg:w-[150px] h-[30px] md:h-[42px] lg:h-[46px] bg-[#FD6B70] text-[#FFFFFF] rounded-sm text-[13px] md:text-[18px] '>Get Started</button>
+                    <Link to='/pricing'>
+                        <button className='cursor-pointer w-[100px] md:w-[130px] lg:w-[150px] h-[30px] md:h-[42px] lg:h-[46px] bg-[#FD6B70] text-[#FFFFFF] rounded-sm text-[13px] md:text-[18px] '>Get Started</button>
+                    </Link>
                 </div>
                 <div className='hidden md:block relative ml-20 md:ml-8 lg:ml-25'>
                     <img src={featureMain1} className='h-[130px] md:h-[190px] lg:h-[300px] w-auto rounded-lg ' />
@@ -141,7 +143,9 @@ function Feature() {
                     <p className='text-[25px] md:text-[38px] lg:text-[58px] leading-8 md:leading-12 lg:leading-19 tracking-widest font-semibold '>DocShift :<br /> Revolutionizing<br />Revolutionize</p>
                     <p className='text-[10px] md:text-[13px] lg:text-[18px] my-2 md:my-5 mx-5 md:mx-0 md:leading-4 lg:leading-9 '>DocShift is a powerful suite of tools designed <br className='hidden md:block lg:hidden ' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='hidden md:block lg:hidden ' /> productivity. From Al-powered writing<br className='hidden lg:block' /> assistance <br className='hidden md:block lg:hidden ' /> to advanced plagiarism detection.</p>
                     <div className='space-x-4 md:space-x-6 lg:space-x-12 md:mt-10 mb-5 md:mb-20 text-[10px] md:text-[14px] lg:text-[17px] '>
-                        <button className='w-[70px] md:w-[130px] lg:w-[150px] h-[28px] md:h-[36px] lg:h-[46px] bg-[#FD6B70] rounded-sm '>Get Started</button>
+                        <Link to='/pricing'>
+                            <button className='cursor-pointer w-[70px] md:w-[130px] lg:w-[150px] h-[28px] md:h-[36px] lg:h-[46px] bg-[#FD6B70] rounded-sm '>Get Started</button>
+                        </Link>
                         <button className='w-[70px] md:w-[130px] lg:w-[150px] h-[28px] md:h-[36px] lg:h-[46px] bg-[#0E215D] rounded-sm '>Learn More</button>
                     </div>
                     <p className='text-[13px] md:text-[19px] lg:text-[25px] '>File Upload & Storage</p>

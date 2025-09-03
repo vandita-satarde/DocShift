@@ -31,6 +31,7 @@ import feature5 from "../assets/icons/Integrate Seamlessly 1.png"
 import customer1 from "../assets/images/homeimages/Customer1.png"
 import customer2 from "../assets/images/homeimages/Customer2.png"
 import customer3 from "../assets/images/homeimages/Customer3.png"
+import { Link } from 'react-router-dom';
 
 
 const testimonialsData = [
@@ -76,7 +77,9 @@ function Home() {
         <div className='text-[#FFFFFF] '>
           <p className='text-[34px] md:text-[40px] lg:text-[65px] leading-10 md:leading-11 lg:leading-20 '>AI-Powered Document Management Platform</p>
           <p className='text-[12px] md:text-[14px] lg:text-[19px] my-4 md:my-5 lg:my-9 mr-9 md:mr-19 lg:mr-60 md:leading-6 lg:leading-9 '>DocShift is a powerful suite of tools designed to streamline your workflow and boost your productivity. From AI-powered writing assistance to advanced plagiarism detection.</p>
-          <button className='w-[100px] md:w-[130px] lg:w-[150px] h-[30px] md:h-[40px] lg:h-[45px] bg-[#FD6B70] rounded-sm text-[13px] md:text-[17px] lg:text-[18px] '>Get Started</button>
+          <Link to='/pricing'>
+            <button className='cursor-pointer w-[100px] md:w-[130px] lg:w-[150px] h-[30px] md:h-[40px] lg:h-[45px] bg-[#FD6B70] rounded-sm text-[13px] md:text-[17px] lg:text-[18px] '>Get Started</button>
+          </Link>
         </div>
         <img src={homeImage} alt="Hero" className='w-[220px] md:w-[240px] lg:w-[500px] h-full mt-12 md:mt-10 lg:mt-5 mx-auto ' />
       </div>
@@ -85,7 +88,7 @@ function Home() {
       <div className='bg-[#F5F9FE] px-8 md:px-20 lg:px-30 pb-15 md:pb-30'>
         <div className='text-[#0E1836] text-center py-10 md:py-13 lg:py-16'>
           <p className='text-[28px] md:text-[35px] lg:text-[48px] '>Why DocShift Stands Out</p>
-          <p className='text-[11px] md:text-[14px] lg:text-[15px] leading-4.5 lg:leading-5 '>DocShift is more than a document management system (DMS)<br/>—it’s a comprehensive ecosystem designed to<br/> address modern document challenges.</p>
+          <p className='text-[11px] md:text-[14px] lg:text-[15px] leading-4.5 lg:leading-5 '>DocShift is more than a document management system (DMS)<br />—it’s a comprehensive ecosystem designed to<br /> address modern document challenges.</p>
         </div>
 
         <div className='flex flex-wrap justify-center bg-white text-[#0E1836] rounded-lg pb-10 lg:pb-23 mb-10 lg:mb-18'>

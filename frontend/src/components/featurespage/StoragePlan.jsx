@@ -10,7 +10,7 @@ function StoragePlan({color='', subtext, name, description, showButton=true }) {
                 <p className='text-[18px] md:text-[30px] lg:text-[48px] '>{name}</p>
                 <p className='text-[8px] md:text-[13px] py-2 lg:py-4 leading-3 md:leading-5 lg:leading-7 mx-8 md:mx-25 '>{description}</p>
                 {showButton && (
-                    <Link to='/pricing' ><button className='text-center rounded-4xl w-20 md:w-42 h-6 md:h-11 bg-[#FD6B70] text-white text-[10px] md:text-[21px] '>Pricing</button></Link>
+                    <Link to='/pricing' ><button className='cursor-pointer text-center rounded-4xl w-20 md:w-42 h-6 md:h-11 bg-[#FD6B70] text-white text-[10px] md:text-[21px] '>Pricing</button></Link>
                 )}
             </div>
         </>

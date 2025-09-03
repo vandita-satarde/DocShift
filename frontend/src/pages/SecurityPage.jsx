@@ -26,9 +26,11 @@ function SecurityPage() {
 
             {/* herosection */}
             <div className='bg-[#F5F9FE] text-[#0E1836] text-center px-6 md:px-16 lg:px-30 pt-26 md:pt-41 pb-7 md:pb-20 '>
-                <p className='text-[26px] md:text-[52px] lg:text-[80px] font-semibold leading-7 md:leading-14 lg:leading-23 tracking-wider '> Enterprise-Grade<br/> Security and Compliance</p>
-                <p className='text-[11px] md:text-[19px] lg:text-[22px] py-4 md:py-8 lg:py-13 leading-4 md:leading-7 lg:leading-11'>DocShift is more than a document management system (DMS)—it’s a comprehensive<br className='hidden lg:block'/> ecosystem designed to address modern document challenges.</p>
-                <button className='cursor-pointer w-[100px] md:w-[180px] lg:w-[240px] h-[30px] md:h-[55px] lg:h-[65px] bg-[#FD6B70] text-white text-[13px] md:text-[22px] lg:text-[24px] rounded-sm '>Get Started</button>
+                <p className='text-[26px] md:text-[52px] lg:text-[80px] font-semibold leading-7 md:leading-14 lg:leading-23 tracking-wider '> Enterprise-Grade<br /> Security and Compliance</p>
+                <p className='text-[11px] md:text-[19px] lg:text-[22px] py-4 md:py-8 lg:py-13 leading-4 md:leading-7 lg:leading-11'>DocShift is more than a document management system (DMS)—it’s a comprehensive<br className='hidden lg:block' /> ecosystem designed to address modern document challenges.</p>
+                <Link to='/pricing'>
+                    <button className='cursor-pointer w-[100px] md:w-[180px] lg:w-[240px] h-[30px] md:h-[55px] lg:h-[65px] bg-[#FD6B70] text-white text-[13px] md:text-[22px] lg:text-[24px] rounded-sm '>Get Started</button>
+                </Link>
                 <div className='flex text-left mt-8 md:mt-16 lg:mt-28 px-2 gap-2 md:gap-12 lg:gap-40 text-[8px] md:text-[17px] text-[#000000CC] md:leading-6 lg:leading-9 tracking-wider md:tracking-widest'>
                     <p>Instead of juggling iLovePDF for storage, DocShift centralizes everything.</p>
                     <p>Instead of juggling iLovePDF for storage, DocShift centralizes everything.</p>
@@ -39,47 +41,47 @@ function SecurityPage() {
             {/* compliance & security */}
             <div className='text-white bg-[#0D1632] px-6 md:px-0 text-center pt-6 md:pt-15 lg:pt-18 md:pb-6 lg:pb-10 lg:space-y-1 '>
                 <p className='text-[22px] md:text-[40px] lg:text-[45px] '>Compliance & Security</p>
-                <p className='text-[11px] md:text-[15px]  '>DocShift is more than a document management system (DMS)—it’s a<br className='hidden md:block'/> comprehensive ecosystem designed to address modern document challenges.</p>
+                <p className='text-[11px] md:text-[15px]  '>DocShift is more than a document management system (DMS)—it’s a<br className='hidden md:block' /> comprehensive ecosystem designed to address modern document challenges.</p>
                 <div className='py-7 md:py-14 flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-18 '>
                     <Link to='/security1page' >
-                        <Compliance 
-                        image={circle1}
-                        name='Document Access Logs'
-                        subcontent='Track Every Interaction with Detailed Audit Logs'
-                        content='DocShift’s document access logs provide a comprehensive record of who accessed, viewed, edited, or shared your documents, ensuring transparency and compliance.'
-                    />
+                        <Compliance
+                            image={circle1}
+                            name='Document Access Logs'
+                            subcontent='Track Every Interaction with Detailed Audit Logs'
+                            content='DocShift’s document access logs provide a comprehensive record of who accessed, viewed, edited, or shared your documents, ensuring transparency and compliance.'
+                        />
                     </Link>
                     <Link to='/security2page' >
-                    <Compliance 
-                        image={circle2}
-                        name='Permission Groups'
-                        subcontent='Control Access with Granular Permissions'
-                        content='DocShift’s permission groups allow you to assign roles (Admin, Manager, Employee) to control who can view, edit, or download documents.'
-                    />
+                        <Compliance
+                            image={circle2}
+                            name='Permission Groups'
+                            subcontent='Control Access with Granular Permissions'
+                            content='DocShift’s permission groups allow you to assign roles (Admin, Manager, Employee) to control who can view, edit, or download documents.'
+                        />
                     </Link>
                     <Link to='/security3page' >
-                    <Compliance 
-                        image={circle3}
-                        name='ISO / HIPAA / GDPR Ready'
-                        subcontent='Meet Global Compliance Standards'
-                        content='DocShift is designed to comply with ISO 27001, HIPAA, and GDPR, ensuring your documents meet regulatory requirements.'
-                    />
+                        <Compliance
+                            image={circle3}
+                            name='ISO / HIPAA / GDPR Ready'
+                            subcontent='Meet Global Compliance Standards'
+                            content='DocShift is designed to comply with ISO 27001, HIPAA, and GDPR, ensuring your documents meet regulatory requirements.'
+                        />
                     </Link>
                     <Link to='/security4page' >
-                    <Compliance 
-                        image={circle4}
-                        name='Data Retention Rules'
-                        subcontent='Automate Compliance with Retention Policies'
-                        content='Set retention periods for documents to comply with regulatory requirements or internal policies.'
-                    />
+                        <Compliance
+                            image={circle4}
+                            name='Data Retention Rules'
+                            subcontent='Automate Compliance with Retention Policies'
+                            content='Set retention periods for documents to comply with regulatory requirements or internal policies.'
+                        />
                     </Link>
                     <Link to='/security5page' >
-                    <Compliance 
-                        image={circle5}
-                        name='Secure Sharing Links'
-                        subcontent='Share Documents with Confidence'
-                        content='Share documents securely with expiring, password-protected links.'
-                    />
+                        <Compliance
+                            image={circle5}
+                            name='Secure Sharing Links'
+                            subcontent='Share Documents with Confidence'
+                            content='Share documents securely with expiring, password-protected links.'
+                        />
                     </Link>
                 </div>
             </div>
@@ -116,27 +118,27 @@ function SecurityPage() {
                 </div>
             </div>
 
-            <Permission 
+            <Permission
                 name='Permission Groups'
                 subtext='Control Access with Granular Permissions'
                 image={permission1}
                 imgTag=' object-cover md:h-[550px]'
             />
-            <Permission 
+            <Permission
                 bgColor='bg-[#F5F9FE]'
                 name='Data Retention Rules'
                 subtext='Automate Compliance with Retention Policies'
                 image={permission2}
                 imgTag='h-[160px] md:h-[570px]'
             />
-            <Permission 
+            <Permission
                 name='Secure Sharing Links'
                 subtext='Share Documents with Confidence'
                 image={permission3}
                 imgTag='md:h-[550px] object-cover'
             />
 
-            <Footer/>
+            <Footer />
         </>
     )
 }
