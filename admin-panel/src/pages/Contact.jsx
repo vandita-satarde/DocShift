@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar";
 function AdminPanel() {
     const [contacts, setContacts] = useState([]);
     const [editingContact, setEditingContact] = useState(null); // store contact being edited
-    const [editData, setEditData] = useState({ fullName: "", email: "", message: "" });
+    const [editData, setEditData] = useState({ remark: "" });
 
 
     // Fetch contacts
@@ -37,11 +37,7 @@ function AdminPanel() {
     // Open edit form
     const handleEditClick = (contact) => {
         setEditingContact(contact._id);
-        setEditData({
-            fullName: contact.fullName,
-            email: contact.email,
-            message: contact.message,
-        });
+        setEditData({ remark: contact.remark || "" });
     };
 
     // Save edited contact
@@ -70,52 +66,27 @@ function AdminPanel() {
                                 <th className="px-4 md:px-6 py-1 md:py-3 text-left">Full Name</th>
                                 <th className="px-4 md:px-6 py-1 md:py-3 text-left">Email</th>
                                 <th className="px-4 md:px-6 py-1 md:py-3 text-left">Message</th>
+                                <th className="px-4 md:px-6 py-1 md:py-3 text-center">Remark</th>
                                 <th className="px-4 md:px-6 py-1 md:py-3 text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             {contacts.length > 0 ? (
                                 contacts.map((contact) => (
-                                    <tr key={contact._id} className="hover:bg-gray-100">
-                                        <td className="px-2 md:px-6 md:py-3">
+                                    <tr key={contact._id} className="hover:bg-gray-100 ">
+                                        <td className="px-2 md:px-6 md:py-3"> {contact.fullName} </td>
+                                        <td className="px-2 md:px-6  md:py-4"> {contact.email} </td>
+                                        <td className="px-2 md:px-6 py-1 md:py-4"> {contact.message} </td>
+                                        <td>
                                             {editingContact === contact._id ? (
-                                                <input
-                                                    type="text"
-                                                    value={editData.fullName}
-                                                    onChange={(e) =>
-                                                        setEditData({ ...editData, fullName: e.target.value })
-                                                    }
-                                                    className="border p-1 rounded"
+                                                <textarea 
+                                                    value={editData.remark}
+                                                    onChange={(e) => setEditData({ ...editData, remark: e.target.value })}
+                                                    placeholder="Add remark..."
+                                                    className="border m-1 p-1 rounded"
                                                 />
                                             ) : (
-                                                contact.fullName
-                                            )}
-                                        </td>
-                                        <td className="px-2 md:px-6  md:py-4">
-                                            {editingContact === contact._id ? (
-                                                <input
-                                                    type="email"
-                                                    value={editData.email}
-                                                    onChange={(e) =>
-                                                        setEditData({ ...editData, email: e.target.value })
-                                                    }
-                                                    className="border p-1 rounded"
-                                                />
-                                            ) : (
-                                                contact.email
-                                            )}
-                                        </td>
-                                        <td className="px-2 md:px-6 py-1 md:py-4">
-                                            {editingContact === contact._id ? (
-                                                <textarea
-                                                    value={editData.message}
-                                                    onChange={(e) =>
-                                                        setEditData({ ...editData, message: e.target.value })
-                                                    }
-                                                    className="border p-1 rounded"
-                                                />
-                                            ) : (
-                                                contact.message
+                                                contact.remark || <span className="text-gray-400">No remark</span>
                                             )}
                                         </td>
                                         <td className="px-2 md:px-6 py-1 md:py-4 flex justify-center">

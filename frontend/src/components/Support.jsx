@@ -3,7 +3,7 @@ import React from 'react'
 function Support({mainDiv='bg-[#0E1836] text-white', title1, subtext1, listItem1, listItem2, listItem3, listItem4, listItem5, title2, button, subtext2}) {
     return (
         <>
-            <div className={`${mainDiv} text-center space-y-5 md:space-y-12 lg:space-y-15 px-6 lg:px-40 py-10 md:py-12 lg:py-15 tracking-wide md:tracking-widest `}>
+            <div className={`${mainDiv} text-center space-y-5 md:space-y-12 lg:space-y-15 px-6 lg:px-40 py-10 md:py-12 lg:py-25 tracking-wide md:tracking-widest `}>
                 <div className=' md:space-y-0 lg:space-y-4 '>
                     <p className='text-[18px] md:text-[40px] lg:text-[45px] '>{title1}</p>
                     <p className='text-[8px] md:text-[16px] lg:text-[21px] '>{subtext1}</p>
