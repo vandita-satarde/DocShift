@@ -87,31 +87,31 @@ function SecurityPage() {
             </div>
 
             {/* Document Access Logs */}
-            <div className='bg-[#F5F9FE] text-[#0E1836] tracking-wide md:tracking-wider text-center py-8 md:py-13 px-3 md:px-25'>
-                <p className='text-[20px] md:text-[48px] '>Document Access Logs</p>
-                <p className='text-[8px] md:text-[16px] '>Track Every Interaction with Detailed Audit Logs</p>
-                <div className='flex py-3 md:py-15 gap-3 md:gap-8 '>
-                    <img src={DocAccessLog} className='w-[170px] md:w-[650px] h-full object-cover rounded-md md:rounded-lg' />
-                    <div className='space-y-1 md:space-y-7'>
-                        <div className='border px-2 md:px-8 py-1 md:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-9'>
-                            <img src={iso} className='w-4 md:w-20 ' />
-                            <div className='text-left md:space-y-1'>
-                                <p className='text-[9px] md:text-[32px] '>ISO</p>
-                                <p className='text-[6px] md:text-[23px] leading-2 md:leading-6 '>Adheres to information security management standards.</p>
+            <div className='bg-[#F5F9FE] text-[#0E1836] tracking-wide md:tracking-wider text-center py-8 md:py-10 lg:py-13 px-3 md:px-6 lg:px-25'>
+                <p className='text-[20px] md:text-[38px] lg:text-[48px] '>Document Access Logs</p>
+                <p className='text-[8px] md:text-[15px] lg:text-[16px] '>Track Every Interaction with Detailed Audit Logs</p>
+                <div className='flex py-3 md:py-6 lg:py-15 gap-3 md:gap-3 lg:gap-8 '>
+                    <img src={DocAccessLog} className='w-[170px] md:w-[360px] lg:w-[650px] h-full object-cover rounded-md md:rounded-lg' />
+                    <div className='space-y-1 md:space-y-2 lg:space-y-7'>
+                        <div className='border px-2 md:px-2 lg:px-8 py-1 lg:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-3 lg:gap-9'>
+                            <img src={iso} className='w-4 md:w-9 lg:w-20 ' />
+                            <div className='text-left lg:space-y-1'>
+                                <p className='text-[9px] md:text-[22px] lg:text-[32px] '>ISO</p>
+                                <p className='text-[6px] md:text-[16px] lg:text-[23px] leading-2 md:leading-4 lg:leading-6 '>Adheres to information security management standards.</p>
                             </div>
                         </div>
-                        <div className='border px-2 md:px-8 py-1 md:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-9'>
-                            <img src={hipaa} className='w-4 md:w-20' />
-                            <div className='text-left md:space-y-1'>
-                                <p className='text-[9px] md:text-[32px] '>HIPAA</p>
-                                <p className='text-[6px] md:text-[23px] leading-2 md:leading-6 '>Protects patient data with encrypted storage and access logs.</p>
+                        <div className='border px-2 md:px-2 lg:px-8 py-1 lg:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-3 lg:gap-9'>
+                            <img src={hipaa} className='w-4 md:w-9 lg:w-20' />
+                            <div className='text-left lg:space-y-1'>
+                                <p className='text-[9px] md:text-[22px] lg:text-[32px] '>HIPAA</p>
+                                <p className='text-[6px] md:text-[16px] lg:text-[23px] leading-2 md:leading-4 lg:leading-6 '>Protects patient data with encrypted storage and access logs.</p>
                             </div>
                         </div>
-                        <div className='border px-2 md:px-8 py-1 md:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-9'>
-                            <img src={gdpr} className='w-4 md:w-20' />
-                            <div className='text-left md:space-y-1'>
-                                <p className='text-[9px] md:text-[32px] '>GDPR</p>
-                                <p className='text-[6px] md:text-[23px] leading-2 md:leading-6 '>Supports data subject rights, including data deletion and portability.</p>
+                        <div className='border px-2 md:px-2 lg:px-8 py-1 lg:py-4 rounded-lg flex justify-center items-center gap-1 md:gap-3 lg:gap-9'>
+                            <img src={gdpr} className='w-4 md:w-9 lg:w-20' />
+                            <div className='text-left lg:space-y-1'>
+                                <p className='text-[9px] md:text-[22px] lg:text-[32px] '>GDPR</p>
+                                <p className='text-[6px] md:text-[16px] lg:text-[23px] leading-2 md:leading-4 lg:leading-6 '>Supports data subject rights, including data deletion and portability.</p>
                             </div>
                         </div>
                     </div>
@@ -122,20 +122,20 @@ function SecurityPage() {
                 name='Permission Groups'
                 subtext='Control Access with Granular Permissions'
                 image={permission1}
-                imgTag=' object-cover md:h-[550px]'
+                imgTag=' object-cover md:h-[320px] lg:h-[550px]'
             />
             <Permission
                 bgColor='bg-[#F5F9FE]'
                 name='Data Retention Rules'
                 subtext='Automate Compliance with Retention Policies'
                 image={permission2}
-                imgTag='h-[160px] md:h-[570px]'
+                imgTag='h-[160px] md:h-[300px] lg:h-[570px]'
             />
             <Permission
                 name='Secure Sharing Links'
                 subtext='Share Documents with Confidence'
                 image={permission3}
-                imgTag='md:h-[550px] object-cover'
+                imgTag='md:h-[320px] lg:h-[550px] object-cover'
             />
 
             <Footer />

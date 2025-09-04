@@ -3,10 +3,10 @@ import React from 'react'
 function permission({bgColor='', name, subtext, image, imgTag=''}) {
   return (
     <>
-      <div className={`${bgColor} text-[#0E1836] text-center px-6 md:px-30 pt-3 md:pt-12 pb-6 md:pb-20 `}>
-        <p className='text-[16px] md:text-[48px] '>{name}</p>
-        <p className='text-[8px] md:text-[17px] -mt-1  mb-2 md:mb-10'>{subtext}</p>
-        <img src={image}  className={`${imgTag} rounded-lg w-[1300px]`} />
+      <div className={`${bgColor} text-[#0E1836] text-center px-6 md:px-18 lg:px-30 pt-3 md:pt-7 lg:pt-12 pb-6 md:pb-15 lg:pb-20 `}>
+        <p className='text-[16px] md:text-[32px] lg:text-[48px] '>{name}</p>
+        <p className='text-[8px] md:text-[15px] lg:text-[17px] -mt-1 mb-2 md:mb-4 lg:mb-10'>{subtext}</p>
+        <img src={image}  className={`${imgTag} rounded-lg`} />
       </div>
     </>
   )
