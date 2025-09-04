@@ -23,8 +23,8 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-[#F5F9FE] flex justify-center items-center h-screen">
-      <form className="bg-[#0E1836] p-6 md:p-8 text-center text-[#F5F9FE] rounded-xl shadow-md w-65 md:w-96" onSubmit={handleLogin}>
+    <div className="bg-[#F5F9FE] flex justify-center items-center h-screen ">
+      <form className="bg-[#0E1836] p-6 md:p-8  text-center text-[#F5F9FE] rounded-xl shadow-md w-65 md:w-96" onSubmit={handleLogin}>
         <h2 className="text-[22px] md:text-3xl font-bold mb-5 md:mb-10 ">Admin Login</h2>
 
         <input

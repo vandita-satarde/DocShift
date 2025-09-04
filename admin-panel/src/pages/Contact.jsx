@@ -54,8 +54,8 @@ function AdminPanel() {
     return (
         <>
             <Sidebar />
-            <div className="pl-5 md:pl-85 pt-24 md:pt-8 bg-[#F5F9FE] min-h-screen p-6 md:p-16">
-                <h2 className=" text-[#0f2769] text-[25px] md:text-[30px] font-bold mb-3 md:mb-8">
+            <div className="pl-5 md:pl-80 lg:pl-85 pt-24 md:pt-10 lg:pt-8 bg-[#F5F9FE] min-h-screen pr-6 md:pr-8 lg:pr-16">
+                <h2 className=" text-[#0f2769] text-[22px] md:text-[30px] font-bold mb-3 md:mb-6 lg:mb-8">
                     Contact Submissions
                 </h2>
 
@@ -74,8 +74,8 @@ function AdminPanel() {
                             {contacts.length > 0 ? (
                                 contacts.map((contact) => (
                                     <tr key={contact._id} className="hover:bg-gray-100 ">
-                                        <td className="px-2 md:px-6 md:py-3"> {contact.fullName} </td>
-                                        <td className="px-2 md:px-6  md:py-4"> {contact.email} </td>
+                                        <td className="px-2 md:px-6 py-1 md:py-3"> {contact.fullName} </td>
+                                        <td className="px-2 md:px-6 py-1 md:py-4"> {contact.email} </td>
                                         <td className="px-2 md:px-6 py-1 md:py-4"> {contact.message} </td>
                                         <td>
                                             {editingContact === contact._id ? (
@@ -128,7 +128,7 @@ function AdminPanel() {
                                 <tr>
                                     <td
                                         colSpan="4"
-                                        className="px-6 py-6 text-center text-gray-500"
+                                        className="px-4 md:px-6 py-4 md:py-6 text-center text-gray-500"
                                     >
                                         No messages yet.
                                     </td>
