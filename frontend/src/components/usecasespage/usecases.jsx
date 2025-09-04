@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function usecases({ maindiv = 'bg-white', img='rounded-full', image, name, subcontent, content, showbutton=true, link = '' }) {
     return (
         <>
-            <div className={`hover:scale-104 duration-200 px-3 md:px-6 lg:px-15 py-2 md:py-4 lg:py-7 rounded-lg flex items-center md:items-end gap-3 md:gap-5 lg:gap-30 ${maindiv} `}>
+            <div className={`hover:scale-104 duration-200 px-3 md:px-6 lg:px-15 py-3 md:py-4 lg:py-7 rounded-lg flex items-center md:items-end gap-3 md:gap-5 lg:gap-30 ${maindiv} `}>
                 <img src={image} className={` h-[100px] md:h-[230px] lg:h-[470px] ${img}`} />
                 <div className='text-left '>
                     <p className='text-[12px] md:text-[25px] lg:text-[49px] font-semibold '>{name}</p>

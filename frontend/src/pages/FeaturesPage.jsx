@@ -141,7 +141,7 @@ function Feature() {
             <div className=' flex flex-col md:flex-row md:tracking-widest items-center md:items-start md:justify-around md:gap-9 lg:gap-10 py-10 md:py-15 bg-[#0E1836] text-white '>
                 <div className='text-center md:text-left'>
                     <p className='text-[25px] md:text-[38px] lg:text-[58px] leading-8 md:leading-12 lg:leading-19 tracking-widest font-semibold '>DocShift :<br /> Revolutionizing<br />Revolutionize</p>
-                    <p className='text-[10px] md:text-[13px] lg:text-[18px] my-2 md:my-5 mx-5 md:mx-0 md:leading-4 lg:leading-9 '>DocShift is a powerful suite of tools designed <br className='hidden md:block lg:hidden ' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='hidden md:block lg:hidden ' /> productivity. From Al-powered writing<br className='hidden lg:block' /> assistance <br className='hidden md:block lg:hidden ' /> to advanced plagiarism detection.</p>
+                    <p className='text-[10px] md:text-[13px] lg:text-[18px] my-2 md:my-5 mx-12 md:mx-0 md:leading-4 lg:leading-9 '>DocShift is a powerful suite of tools designed <br className='hidden md:block lg:hidden ' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='hidden md:block lg:hidden ' /> productivity. From Al-powered writing<br className='hidden lg:block' /> assistance <br className='hidden md:block lg:hidden ' /> to advanced plagiarism detection.</p>
                     <div className='space-x-4 md:space-x-6 lg:space-x-12 md:mt-10 mb-5 md:mb-20 text-[10px] md:text-[14px] lg:text-[17px] '>
                         <Link to='/pricing'>
                             <button className='cursor-pointer w-[70px] md:w-[130px] lg:w-[150px] h-[28px] md:h-[36px] lg:h-[46px] bg-[#FD6B70] rounded-sm '>Get Started</button>
@@ -236,16 +236,16 @@ function Feature() {
             <div className='bg-[#F5F9FE]'>
                 <p className='text-[22px] md:text-[36px] lg:text-[48px] text-[#0E1836] text-center pt-11 md:pt-15 lg:pt-30'>Explore Our Features</p>
                 <div className='flex flex-wrap justify-center md:justify-start gap-x-8 md:gap-x-5 lg:gap-x-10 gap-y-7 md:gap-y-10 lg:gap-y-14 py-4 md:py-8 lg:py-12 md:px-6 lg:px-25'>
-                    <Link to='/feature1page' ><Features name='File Upload & Storage' /></Link>
-                    <Link to='/feature2page'><Features name='Smart Tagging' /></Link>
-                    <Link to='/feature3page'><Features name='Document Version Control' /></Link>
-                    <Link to='/feature4page'><Features name='Expiry Date Tracking' /></Link>
-                    <Link to='/feature5page'><Features name='Role-Based Sharing' /></Link>
-                    <Link to='/feature6page'><Features name='Digital Signature Support' /></Link>
-                    <Link to='/feature7page'><Features name='AI-Integrated Tools' /></Link>
-                    <Link to='/feature8page'><Features name='Plagiarism Checker' /></Link>
-                    <Link to='/feature9page'><Features name='Image & Visual Tools' /></Link>
-                    <Link to='/feature10page'><Features name='Document Builder' /></Link>
+                    <Features link='/feature1page' name='File Upload & Storage' />
+                    <Features link='/feature2page' name='Smart Tagging' />
+                    <Features link='/feature3page' name='Document Version Control' />
+                    <Features link='/feature4page' name='Expiry Date Tracking' />
+                    <Features link='/feature5page' name='Role-Based Sharing' />
+                    <Features link='/feature6page' name='Digital Signature Support' />
+                    <Features link='/feature7page' name='AI-Integrated Tools' />
+                    <Features link='/feature8page' name='Plagiarism Checker' />
+                    <Features link='/feature9page' name='Image & Visual Tools' />
+                    <Features link='/feature10page' name='Document Builder' />
                 </div>
             </div>
 

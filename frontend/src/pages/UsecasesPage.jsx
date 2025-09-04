@@ -26,7 +26,7 @@ function UsecasesPage() {
                 {/* industry use cases */}
                 <p className='text-[20px] md:text-[35px] lg:text-[48px] mt-15 md:mt-30 lg:mt-45 lg:mb-1 '>Industry Use Cases</p>
                 <p className='text-[9px] md:text-[15px] tracking-wide w-[240px] md:w-[560px] mx-auto'>DocShift is more than a document management system (DMS)—it’s a comprehensive ecosystem designed to address modern document challenges.</p>
-                <div className='mx-2 md:mx-0 my-6 md:my-10 lg:my-15 space-y-5 md:space-y-7 lg:space-y-20'>
+                <div className='mx-6 md:mx-0 my-6 md:my-10 lg:my-15 space-y-5 md:space-y-7 lg:space-y-20'>
                     <UseCases
                         link='/usecase1page' image={usecase1} name='CA Firms' subcontent='Streamline Your Operation'
                         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
