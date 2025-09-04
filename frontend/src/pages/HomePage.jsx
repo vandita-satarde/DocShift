@@ -73,20 +73,20 @@ function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className='bg-[#0E1836] flex flex-col md:flex-row px-8 md:px-12 lg:px-30 pt-28 md:pt-30 lg:pt-45 pb-15 lg:pb-35 '>
+      <div className='bg-[#0E1836] flex flex-col md:flex-row px-8 md:px-12 lg:px-30 pt-28 md:pt-40 lg:pt-45 pb-15 md:pb-25 lg:pb-35 '>
         <div className='text-[#FFFFFF] '>
           <p className='text-[34px] md:text-[40px] lg:text-[65px] leading-10 md:leading-11 lg:leading-20 '>AI-Powered Document Management Platform</p>
-          <p className='text-[12px] md:text-[14px] lg:text-[19px] my-4 md:my-5 lg:my-9 mr-9 md:mr-19 lg:mr-60 md:leading-6 lg:leading-9 '>DocShift is a powerful suite of tools designed to streamline your workflow and boost your productivity. From AI-powered writing assistance to advanced plagiarism detection.</p>
+          <p className='text-[12px] md:text-[15px] lg:text-[19px] my-4 md:my-5 lg:my-9 mr-9 md:mr-19 lg:mr-60 md:leading-6 lg:leading-9 '>DocShift is a powerful suite of tools designed to streamline your workflow and boost your productivity. From AI-powered writing assistance to advanced plagiarism detection.</p>
           <Link to='/pricing'>
             <button className='cursor-pointer w-[100px] md:w-[130px] lg:w-[150px] h-[30px] md:h-[40px] lg:h-[45px] bg-[#FD6B70] rounded-sm text-[13px] md:text-[17px] lg:text-[18px] '>Get Started</button>
           </Link>
         </div>
-        <img src={homeImage} alt="Hero" className='w-[220px] md:w-[240px] lg:w-[500px] h-full mt-12 md:mt-10 lg:mt-5 mx-auto ' />
+        <img src={homeImage} alt="Hero" className='w-[220px] md:w-[250px] lg:w-[500px] h-full mt-12 md:mt-8 lg:mt-5 mx-auto ' />
       </div>
 
       {/* Why DocShift Stands Out */}
-      <div className='bg-[#F5F9FE] px-8 md:px-20 lg:px-30 pb-15 md:pb-30'>
-        <div className='text-[#0E1836] text-center py-10 md:py-13 lg:py-16'>
+      <div className='bg-[#F5F9FE] px-8 md:px-20 lg:px-30 pb-15 md:pb-20 lg:pb-30'>
+        <div className='text-[#0E1836] text-center py-10 md:py-15 lg:py-16'>
           <p className='text-[22px] md:text-[35px] lg:text-[48px] '>Why DocShift Stands Out</p>
           <p className='text-[11px] md:text-[14px] lg:text-[15px] leading-4.5 lg:leading-5 '>DocShift is more than a document management system (DMS)<br className='hidden md:block' />—it’s a comprehensive ecosystem designed to<br className='hidden md:block' /> address modern document challenges.</p>
         </div>
@@ -109,7 +109,7 @@ function Home() {
       </div>
 
       {/* How DocShift Works */}
-      <div className='bg-[#0D1632] text-[#FFFFFF] text-center px-8 lg:px-22 py-10 md:py-16'>
+      <div className='bg-[#0D1632] text-[#FFFFFF] text-center px-8 lg:px-22 py-10 md:py-20 lg:py-16'>
         <p className='text-[25px] md:text-[36px] lg:text-[47px] md:-mb-3 '>How DocShift Works</p>
         <p className='text-[10px] md:text-[15px] md:pt-2 pb-5 md:pb-7'>DocShift’s workflow is designed for simplicity and power:</p>
 
@@ -154,9 +154,9 @@ function Home() {
       </div>
 
       {/* Customer Testimonials */}
-      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-12 md:py-8 lg:py-18 h-[370px] md:h-[400px] lg:h-[600px] '>
+      <div className='text-[#FFFFFF] bg-[#18233F] flex flex-col items-center py-12 md:py-16 lg:py-18 h-[380px] md:h-[470px] lg:h-[600px] '>
         <p className='text-[22px] md:text-[40px] lg:text-[50px] '>Customer Testimonials</p>
-        <p className='text-[10px] md:text-[14px] md:mt-1 md:mb-25 '>DocShift: Smart Document Management Made Simple.</p>
+        <p className='text-[10px] md:text-[14px] md:mt-1 md:mb-24 lg:mb-25 '>DocShift: Smart Document Management Made Simple.</p>
 
         {/*without Carousel */}
         <div className='hidden lg:block'>

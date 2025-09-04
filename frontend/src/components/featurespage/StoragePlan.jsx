@@ -6,7 +6,7 @@ function StoragePlan({color='', subtext, name, description, showButton=true }) {
     return (
         <>
             <div className={`tracking-wider md:tracking-widest text-center pt-6 md:pt-10 lg:pt-14 pb-6 md:pb-10 lg:pb-15 text-[#0E1836] ${color} `}>
-                <p className='text-[9px] md:text-[17px] lg:text-[24px] font-semibold md:-mb-2'>{subtext}</p>
+                <p className='text-[9px] md:text-[17px] lg:text-[24px] font-semibold lg:-mb-2'>{subtext}</p>
                 <p className='text-[18px] md:text-[32px] lg:text-[48px] '>{name}</p>
                 <p className='text-[10px] md:text-[13px] py-1 md:py-2 lg:py-4 leading-3 md:leading-5 lg:leading-7 mx-8 md:mx-25 '>{description}</p>
                 {showButton && (

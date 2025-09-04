@@ -48,7 +48,7 @@ function Feature() {
 
             {/* herosection */}
             <div className='flex flex-col md:flex-row justify-center md:justify-start py-28 md:py-25 lg:py-28 bg-[#F5F9FE] '>
-                <div className='text-[#0E1836] md:pl-8 lg:pl-35 py-5 md:py-20 px-5 md:px-0 text-center md:text-left '>
+                <div className='text-[#0E1836] md:pl-10 lg:pl-35 py-5 md:py-20 px-5 md:px-0 text-center md:text-left '>
                     <p className='text-[28px] md:text-[41px] lg:text-[82px] leading-7 md:leading-13 lg:leading-23 font-semibold tracking-widest '>DocShift:<br />Revolutionizing</p>
                     <p className='text-[11px] md:text-[16px] lg:text-[19px] my-4 md:my-5 lg:my-9 leading-5 lg:leading-9 lg:tracking-wider'>DocShift is a powerful suite of tools designed <br className='hidden md:block lg:hidden' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='hidden md:block lg:hidden' />  productivity. From Al-powered writing<br className='hidden md:block' /> assistance to advanced plagiarism detection.</p>
                     <Link to='/pricing'>
@@ -235,7 +235,7 @@ function Feature() {
             {/* Explore Our Features */}
             <div className='bg-[#F5F9FE]'>
                 <p className='text-[22px] md:text-[36px] lg:text-[48px] text-[#0E1836] text-center pt-11 md:pt-15 lg:pt-30'>Explore Our Features</p>
-                <div className='flex flex-wrap justify-center md:justify-start gap-x-8 md:gap-x-5 lg:gap-x-10 gap-y-7 md:gap-y-10 lg:gap-y-14 py-4 md:py-8 lg:py-12 md:px-6 lg:px-25'>
+                <div className='flex flex-wrap justify-center gap-x-8 md:gap-x-5 lg:gap-x-10 gap-y-7 md:gap-y-12 lg:gap-y-14 py-4 md:py-8 lg:py-12 md:px-6 lg:px-25'>
                     <Features link='/feature1page' name='File Upload & Storage' />
                     <Features link='/feature2page' name='Smart Tagging' />
                     <Features link='/feature3page' name='Document Version Control' />

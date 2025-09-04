@@ -18,12 +18,12 @@ function integration3page() {
                 features='Features include'
             />
 
-            <div className='flex flex-wrap justify-center gap-x-9 md:gap-x-18 lg:gap-x-70 -gap-y-1 md:gap-y-5 lg:gap-y-10 bg-[#F5F9FE] pb-5 md:pb-15 md:px-50'>
+            <div className='flex flex-wrap justify-center gap-x-9 md:gap-x-18 lg:gap-x-70 -gap-y-1 md:gap-y-5 lg:gap-y-10 bg-[#F5F9FE] pb-5 md:pb-15 md:px-20 lg:px-50'>
                 
-                    <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Unique Email Address' description='Each user gets a unique upload email.' />
-                    <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Automatic Processing' description='Uploaded files are tagged and stored in designated folders.' />
-                    <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Supported Formats' description='Upload PDFs, Word, Excel, or images.' />                    
-                    <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-100' name='Batch Uploads' description='Send multiple files in one email.' />
+                    <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-60 lg:w-100' name='Unique Email Address' description='Each user gets a unique upload email.' />
+                    <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-60 lg:w-100' name='Automatic Processing' description='Uploaded files are tagged and stored in designated folders.' />
+                    <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-60 lg:w-100' name='Supported Formats' description='Upload PDFs, Word, Excel, or images.' />                    
+                    <Subfeature textColor='text-[#0E1836]' mainDiv='w-28 md:w-60 lg:w-100' name='Batch Uploads' description='Send multiple files in one email.' />
                 
             </div>
 

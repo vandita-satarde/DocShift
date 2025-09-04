@@ -9,7 +9,7 @@ function HomeTools({className='', subtitle, title, content, image, img='' }) {
                     <p className='text-[#0E1836] text-[19px] md:text-[27px] lg:text-[48px] lg:mt-2 lg:mb-5 '>{title}</p>
                     <p className='text-[9px] md:text-[15px] lg:text-[19px]'>{content}</p>
                 </div>
-                <img src={image} className={`${img} w-80 md:w-70 lg:w-[560px] h-auto `} />
+                <img src={image} className={`${img} w-80 md:w-75 lg:w-[560px] h-auto `} />
             </div>
 
         </>
