@@ -8,12 +8,12 @@ function Footer({ className = 'z-10 relative' }) {
   return (
     <>
       <div className={`${className} text-[#C0C0C0] bg-[#091432]`}>
-        <div className={` flex flex-col md:flex-row items-center gap-7 md:gap-14 lg:gap-40 px-10 md:px-16 lg:px-38 py-11 md:py-33 md:h-[260px] lg:h-[370px] text-[12px] md:text-[15px] lg:text-[19px]`}>
-          <div className='text-center space-y-0 md:space-y-4 lg:space-y-11'>
+        <div className={` flex flex-col md:flex-row items-center gap-7 md:gap-14 lg:gap-40 px-10 md:px-16 lg:px-38 py-12 md:py-33 md:h-[260px] lg:h-[370px] text-[12px] md:text-[15px] lg:text-[19px]`}>
+          <div className='text-center space-y-1 md:space-y-4 lg:space-y-11'>
             <img src={logo} className='w-[130px] md:w-[190px] lg:w-[240px] mx-auto ' />
             <p className='text-[9px] md:text-[13px]'>@2025 DocShift. Inc<br className='hidden md:block' /> All rights reserved.</p>
           </div>
-          <div className='flex flex-col md:flex-row text-center md:text-left gap-8 md:gap-13 lg:gap-45'>
+          <div className='flex flex-col md:flex-row text-center md:text-left gap-9 md:gap-13 lg:gap-45'>
             <div className=' md:space-y-1.5 lg:space-y-3'>
               <p className='text-white'>Quick Links</p>
               <p><Link to='/features'>Features</Link></p>

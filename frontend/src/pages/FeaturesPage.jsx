@@ -47,7 +47,7 @@ function Feature() {
             <Navbar />
 
             {/* herosection */}
-            <div className='flex flex-col md:flex-row justify-center md:justify-start py-24 md:py-25 lg:py-28 bg-[#F5F9FE] '>
+            <div className='flex flex-col md:flex-row justify-center md:justify-start py-28 md:py-25 lg:py-28 bg-[#F5F9FE] '>
                 <div className='text-[#0E1836] md:pl-8 lg:pl-35 py-5 md:py-20 px-5 md:px-0 text-center md:text-left '>
                     <p className='text-[28px] md:text-[41px] lg:text-[82px] leading-7 md:leading-13 lg:leading-23 font-semibold tracking-widest '>DocShift:<br />Revolutionizing</p>
                     <p className='text-[11px] md:text-[16px] lg:text-[19px] my-4 md:my-5 lg:my-9 leading-5 lg:leading-9 lg:tracking-wider'>DocShift is a powerful suite of tools designed <br className='hidden md:block lg:hidden' /> to streamline your<br className='hidden lg:block' /> workflow and boost your<br className='hidden md:block lg:hidden' />  productivity. From Al-powered writing<br className='hidden md:block' /> assistance to advanced plagiarism detection.</p>
@@ -60,7 +60,7 @@ function Feature() {
                     <img src={featureMain2} className='absolute top-20 md:top-30 lg:top-39 left-12 md:left-12 lg:left-32 h-[140px] md:h-[210px] lg:h-[320px] w-auto rounded-2xl  ' />
                     <img src={featureMain3} className='absolute top-35 md:top-55 lg:top-78 -left-3 h-[140px] md:h-[200px] lg:h-[300px] w-auto rounded-lg ' />
                 </div>
-                <div className='block md:hidden mt-26'>
+                <div className='block md:hidden mt-24'>
                     <div className=" relative w-full flex justify-center items-center">
                         {/* Images */}
                         {images.map((img, index) => (
@@ -89,13 +89,13 @@ function Feature() {
             </div>
 
             {/* Unlock All Tools */}
-            <div className="bg-[#F5F9FE] pt-16 md:pt-0">
+            <div className="bg-[#F5F9FE] pt-14 md:pt-0">
                 <p className="text-[#0E1836] text-[22px] md:text-[33px] lg:text-[48px] text-center">
                     Unlock All Tools
                 </p>
 
                 {/* Tools Grid */}
-                <div className="flex flex-wrap gap-4 md:gap-6 lg:gap-10 justify-center py-4 md:py-10 lg:py-20 lg:px-12">
+                <div className="flex flex-wrap gap-6 md:gap-6 lg:gap-10 justify-center py-4 md:py-10 lg:py-20 lg:px-12">
                     {visibleTools.map((tool, index) => (
                         <div
                             key={index}
@@ -235,7 +235,7 @@ function Feature() {
             {/* Explore Our Features */}
             <div className='bg-[#F5F9FE]'>
                 <p className='text-[22px] md:text-[36px] lg:text-[48px] text-[#0E1836] text-center pt-11 md:pt-15 lg:pt-30'>Explore Our Features</p>
-                <div className='flex flex-wrap justify-center md:justify-start gap-x-6 md:gap-x-5 lg:gap-x-10 gap-y-9 md:gap-y-10 lg:gap-y-14 py-4 md:py-8 lg:py-12 md:px-6 lg:px-25'>
+                <div className='flex flex-wrap justify-center md:justify-start gap-x-8 md:gap-x-5 lg:gap-x-10 gap-y-7 md:gap-y-10 lg:gap-y-14 py-4 md:py-8 lg:py-12 md:px-6 lg:px-25'>
                     <Link to='/feature1page' ><Features name='File Upload & Storage' /></Link>
                     <Link to='/feature2page'><Features name='Smart Tagging' /></Link>
                     <Link to='/feature3page'><Features name='Document Version Control' /></Link>

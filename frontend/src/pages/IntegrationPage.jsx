@@ -40,7 +40,7 @@ function IntegrationPage() {
             <div id='integration' className=' bg-[#F5F9FE] text-center pt-13 md:pt-22 lg:pt-36'>
                 <p className='text-[20px] md:text-[36px] lg:text-[48px] md:mb-1 '>Industry Use Cases</p>
                 <p className='text-[9px] md:text-[15px] tracking-wide w-[240px] md:w-[500px] lg:w-[560px] mx-auto'>DocShift integrates with popular tools and platforms to fit seamlessly into your existing workflows.</p>
-                <div className=' mx-7 md:mx-18 lg:mx-30 py-6 md:py-10 flex flex-col space-y-3 md:space-y-4 lg:space-y-10 '>
+                <div className=' mx-12 md:mx-18 lg:mx-30 py-6 md:py-10 flex flex-col space-y-4 md:space-y-4 lg:space-y-10 '>
                     <Link to='/integration1page'>
                         <UseCases
                             maindiv='bg-[#F5F9FE] hover:shadow hover:shadow-2xl ' image={integration1} img='rounded-none ' name='Google Drive' subcontent='Sync Documents with Google Drive' showbutton={false}
