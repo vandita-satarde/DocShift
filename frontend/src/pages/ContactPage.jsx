@@ -53,9 +53,9 @@ function ContactUs() {
             <>
                 <Navbar />
                 <div className='relative flex flex-col sm:flex-row md:flex-row justify-between gap-y-14 py-8 md:py-25 lg:py-30 px-8 md:px-15 lg:px-30 mt-15 md:mt-3 lg:mt-0 bg-[#E4EBFF] text-[#0E1836] '>
-                    <img src={image2} className='z-0 absolute top-5 md:top-1 lg:-top-20 -right-25 md:-right-26 lg:right-130 w-45 md:w-60 lg:w-100 ' />
-                    <img src={image2} className='z-0 absolute bottom-55 md:bottom-10 lg:-bottom-60 -left-35 md:-left-45 lg:left-50 w-60 md:w-80 lg:w-145 ' />
-                    <div className='z-10 mt-5 md:mt-25 lg:mt-32 pr-6  '>
+                    <img src={image2} className='z-0 hidden md:block absolute md:-top-14 lg:-top-20 md:right-70 lg:right-130 w-45 md:w-60 lg:w-100 ' />
+                    <img src={image2} className='z-0 hidden md:block absolute md:-bottom-40 lg:-bottom-60 md:left-15 lg:left-50 w-60 md:w-80 lg:w-145 ' />
+                    <div className='z-10 mt-5 md:mt-32 lg:mt-32 pr-6  '>
                         <p className='text-[25px] md:text-[32px] lg:text-[50px] '>Lets Get in <span className='font-[700] '>Touch!</span></p>
                         <p className='text-[#1A1A1A] text-[11px] md:text-[13px] lg:text-[13px] md:leading-5 '>
                             Have a question or need assistance? Reach<br />
